@@ -1,3 +1,3 @@
 ﻿# KNOWLEDGE HUB FOUNDATION
 
-Fundação oficial da PredixAI Knowledge Hub.
+O PredixAI Knowledge Hub organiza todo o conhecimento da PredixAI em pesquisa, academia, mÃ­dia, agentes, livros, casos e produtos.

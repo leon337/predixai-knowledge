@@ -1,3 +1,3 @@
 ﻿# PREDIXAI ROLE SYSTEM
 
-Sistema oficial de papéis dos agentes e humanos.
+Define os papÃ©is humanos e dos agentes: pesquisador, professor, redator, designer, revisor, marketing e publicador.

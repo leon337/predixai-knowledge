@@ -1,3 +1,3 @@
 ﻿# MODELO OFICIAL DA AULA
 
-Estrutura padrão das aulas da Academia PredixAI.
+Toda aula terÃ¡ objetivo, prÃ©-requisitos, conteÃºdo, exemplos, glossÃ¡rio, exercÃ­cios, quiz A-E, flashcards, resumo, PDF, HTML e publicaÃ§Ã£o.
