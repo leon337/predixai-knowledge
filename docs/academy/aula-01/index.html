@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aula 01 - Engenharia Reversa de Conhecimento</title>
+  <link rel="stylesheet" href="../../styles.css" />
+  <style>
+    .lesson {
+      background: #FFFFFF;
+      border: 1px solid #CBD5E1;
+      border-radius: 18px;
+      padding: 24px;
+      box-shadow: 0 8px 20px rgba(15, 23, 42, 0.08);
+    }
+
+    .lesson h1, .lesson h2, .lesson h3 {
+      color: #0F172A;
+    }
+
+    .lesson p, .lesson li {
+      color: #475569;
+    }
+
+    .lesson code {
+      background: #E2E8F0;
+      padding: 2px 6px;
+      border-radius: 6px;
+    }
+
+    .lesson blockquote {
+      border-left: 4px solid #10B981;
+      padding-left: 14px;
+      color: #334155;
+      background: #ECFDF5;
+      padding-top: 8px;
+      padding-bottom: 8px;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="badge">Aula 01</div>
+    <h1>Engenharia Reversa de Conhecimento</h1>
+    <p>Modulo 01 - Mentalidade do Arquiteto</p>
+  </header>
+
+  <nav>
+    <a href="../../index.html">Home</a>
+    <a href="../../academy.html">Academy</a>
+    <a href="../../foundation.html">Fundacao</a>
+    <a href="../../research.html">Research</a>
+  </nav>
+
+  <main>
+    <section class="lesson" id="content">
+      Carregando aula...
+    </section>
+  </main>
+
+  <footer>
+    PredixAI BR - Aprenda a pensar. Construa o futuro.
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script>
+    fetch("aula-01.md")
+      .then(response => response.text())
+      .then(markdown => {
+        document.getElementById("content").innerHTML = marked.parse(markdown);
+      });
+  </script>
+</body>
+</html>
