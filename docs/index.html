@@ -8,6 +8,7 @@
   <style>
     :root {
       --primary: #0F172A;
+      --primary-soft: #1E293B;
       --blue: #2563EB;
       --green: #10B981;
       --bg: #F8FAFC;
@@ -16,6 +17,7 @@
       --border: #CBD5E1;
       --white: #FFFFFF;
       --soft: #E2E8F0;
+      --warning: #F59E0B;
     }
 
     * { box-sizing: border-box; }
@@ -29,21 +31,69 @@
     }
 
     header {
-      background: linear-gradient(135deg, #0F172A, #1E293B);
+      background:
+        radial-gradient(circle at top left, rgba(37, 99, 235, 0.35), transparent 35%),
+        linear-gradient(135deg, #0F172A, #111827);
       color: var(--white);
-      padding: 42px 18px;
+      padding: 42px 18px 34px;
       text-align: center;
+    }
+
+    .brand-pill {
+      display: inline-block;
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.2);
+      color: #D1FAE5;
+      padding: 7px 12px;
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: bold;
+      margin-bottom: 16px;
     }
 
     header h1 {
       margin: 0;
-      font-size: 38px;
+      font-size: 36px;
+      line-height: 1.1;
+      letter-spacing: -1px;
     }
 
     header p {
       color: #CBD5E1;
-      margin-top: 10px;
+      margin: 14px auto 0;
+      max-width: 760px;
       font-size: 16px;
+    }
+
+    .hero-actions {
+      margin-top: 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      align-items: center;
+    }
+
+    .btn {
+      display: inline-block;
+      width: 100%;
+      max-width: 320px;
+      text-align: center;
+      padding: 13px 18px;
+      border-radius: 14px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 15px;
+    }
+
+    .btn-primary {
+      background: var(--blue);
+      color: var(--white);
+    }
+
+    .btn-secondary {
+      background: rgba(255,255,255,0.1);
+      color: var(--white);
+      border: 1px solid rgba(255,255,255,0.25);
     }
 
     nav {
@@ -71,65 +121,33 @@
 
     main {
       padding: 20px 16px;
-      max-width: 1100px;
+      max-width: 1120px;
       margin: auto;
-    }
-
-    .hero, .card, .progress-box {
-      border-radius: 18px;
-      box-shadow: 0 8px 20px rgba(15, 23, 42, 0.08);
-    }
-
-    .hero {
-      background: var(--white);
-      border: 1px solid var(--border);
-      padding: 28px;
-      margin-bottom: 28px;
-    }
-
-    .badge {
-      display: inline-block;
-      background: #DCFCE7;
-      color: #166534;
-      padding: 6px 12px;
-      border-radius: 999px;
-      font-size: 13px;
-      font-weight: bold;
-      margin-bottom: 14px;
-    }
-
-    .hero h2 {
-      margin: 0 0 12px;
-      font-size: 34px;
-      color: var(--primary);
-    }
-
-    .hero p, .card p {
-      color: var(--muted);
-    }
-
-    .button {
-      display: inline-block;
-      margin-top: 14px;
-      background: var(--blue);
-      color: var(--white);
-      padding: 12px 18px;
-      border-radius: 12px;
-      text-decoration: none;
-      font-weight: bold;
     }
 
     .section-title {
       margin-top: 34px;
-      margin-bottom: 14px;
+      margin-bottom: 12px;
       color: var(--primary);
       font-size: 24px;
+      letter-spacing: -0.4px;
+    }
+
+    .section-subtitle {
+      color: var(--muted);
+      margin-top: -4px;
+      margin-bottom: 16px;
     }
 
     .grid {
       display: grid;
       grid-template-columns: 1fr;
       gap: 14px;
+    }
+
+    .card, .feature, .progress-box {
+      border-radius: 18px;
+      box-shadow: 0 8px 20px rgba(15, 23, 42, 0.08);
     }
 
     .card {
@@ -144,21 +162,67 @@
       font-size: 21px;
     }
 
+    .card p {
+      color: var(--muted);
+      margin: 0 0 14px;
+    }
+
     .card a {
       color: var(--blue);
       font-weight: bold;
       text-decoration: none;
     }
 
+    .feature {
+      background: var(--white);
+      border: 1px solid var(--border);
+      padding: 22px;
+    }
+
+    .feature strong {
+      color: var(--primary);
+    }
+
+    .pipeline {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 12px;
+    }
+
+    .step {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-left: 5px solid var(--green);
+      border-radius: 16px;
+      padding: 16px;
+    }
+
+    .step span {
+      display: inline-block;
+      color: var(--green);
+      font-weight: bold;
+      margin-bottom: 4px;
+    }
+
+    .step h3 {
+      margin: 0 0 6px;
+      color: var(--primary);
+    }
+
+    .step p {
+      margin: 0;
+      color: var(--muted);
+    }
+
     .progress-box {
       background: var(--primary);
       color: var(--white);
-      padding: 20px;
+      padding: 22px;
       margin-top: 14px;
     }
 
     .progress-box p {
-      color: var(--white);
+      color: #E5E7EB;
     }
 
     .bar {
@@ -166,7 +230,7 @@
       background: #334155;
       border-radius: 999px;
       overflow: hidden;
-      margin: 12px 0;
+      margin: 14px 0;
     }
 
     .bar span {
@@ -174,6 +238,41 @@
       height: 100%;
       width: 100%;
       background: var(--green);
+    }
+
+    .learning-path {
+      background: #ECFDF5;
+      border: 1px solid #A7F3D0;
+      border-radius: 18px;
+      padding: 20px;
+      margin-top: 16px;
+    }
+
+    .learning-path h3 {
+      margin-top: 0;
+      color: #065F46;
+    }
+
+    .learning-path p {
+      color: #047857;
+    }
+
+    .final-cta {
+      margin-top: 34px;
+      background: linear-gradient(135deg, #2563EB, #0F172A);
+      color: var(--white);
+      border-radius: 22px;
+      padding: 28px;
+      text-align: center;
+    }
+
+    .final-cta h2 {
+      margin-top: 0;
+      font-size: 28px;
+    }
+
+    .final-cta p {
+      color: #DBEAFE;
     }
 
     footer {
@@ -184,12 +283,29 @@
     }
 
     @media (min-width: 768px) {
+      header {
+        padding: 64px 24px 54px;
+      }
+
+      header h1 {
+        font-size: 56px;
+      }
+
+      header p {
+        font-size: 18px;
+      }
+
+      .hero-actions {
+        flex-direction: row;
+        justify-content: center;
+      }
+
       .grid {
         grid-template-columns: repeat(3, 1fr);
       }
 
-      header h1 {
-        font-size: 46px;
+      .pipeline {
+        grid-template-columns: repeat(4, 1fr);
       }
     }
   </style>
@@ -197,12 +313,21 @@
 
 <body>
   <header>
+    <div class="brand-pill">Fundacao v1.0 publicada</div>
     <h1>PredixAI Knowledge Hub</h1>
-    <p>O centro oficial de conhecimento da PredixAI BR.</p>
+    <p>
+      Um sistema operacional de conhecimento para transformar pesquisa em aulas,
+      agentes, produtos, conteudo e solucoes reais.
+    </p>
+
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="foundation.html">Explorar Fundacao</a>
+      <a class="btn btn-secondary" href="academy.html">Iniciar Academia</a>
+    </div>
   </header>
 
   <nav>
-    <a href="foundation.html">Funda&ccedil;&atilde;o</a>
+    <a href="foundation.html">Fundacao</a>
     <a href="research.html">Research</a>
     <a href="academy.html">Academy</a>
     <a href="agents.html">Agents</a>
@@ -211,83 +336,115 @@
   </nav>
 
   <main>
-    <section class="hero">
-      <span class="badge">Funda&ccedil;&atilde;o v1.0 publicada</span>
-      <h2>Conhecimento que vira produto.</h2>
+    <section class="feature">
+      <h2 class="section-title">Conhecimento que vira produto.</h2>
       <p>
-        O PredixAI Knowledge Hub organiza pesquisas, aulas, agentes, artigos,
-        ferramentas e decis&otilde;es para transformar conhecimento em solu&ccedil;&otilde;es reais.
+        O PredixAI Knowledge Hub nao e apenas um repositorio. Ele e a base que organiza
+        tudo que a PredixAI aprende, valida e transforma em valor: aulas, PDFs,
+        automacoes, agentes, videos, artigos, templates e produtos digitais.
       </p>
-      <a class="button" href="https://github.com/leon337/predixai-knowledge/tree/main/foundation">
-        Ver Funda&ccedil;&atilde;o no GitHub
-      </a>
+      <p>
+        A regra central e simples: estudar uma vez, documentar corretamente e reutilizar
+        esse conhecimento em varios formatos.
+      </p>
     </section>
 
-    <h2 class="section-title">&Aacute;reas do Knowledge Hub</h2>
+    <h2 class="section-title">Pipeline de conhecimento</h2>
+    <p class="section-subtitle">O caminho que transforma informacao bruta em ativos reutilizaveis.</p>
+
+    <section class="pipeline">
+      <div class="step">
+        <span>01</span>
+        <h3>Pesquisar</h3>
+        <p>Repositorios, videos, artigos, papers, ferramentas e experiencias reais.</p>
+      </div>
+
+      <div class="step">
+        <span>02</span>
+        <h3>Validar</h3>
+        <p>Separar fonte confiavel, opiniao, hipotese, evidencia e aplicacao pratica.</p>
+      </div>
+
+      <div class="step">
+        <span>03</span>
+        <h3>Organizar</h3>
+        <p>Transformar estudo em documentos, modelos, aulas, checklists e agentes.</p>
+      </div>
+
+      <div class="step">
+        <span>04</span>
+        <h3>Publicar</h3>
+        <p>Gerar site, PDF, artigo, video, carrossel, aula e produto comercial.</p>
+      </div>
+    </section>
+
+    <h2 class="section-title">Areas do Knowledge Hub</h2>
+    <p class="section-subtitle">Cada area tem uma funcao clara dentro do ecossistema PredixAI.</p>
 
     <section class="grid">
       <div class="card">
-        <h3>&#128218; Funda&ccedil;&atilde;o</h3>
-        <p>Documentos que definem princ&iacute;pios, metodologia, qualidade, workflow e arquitetura.</p>
-        <a href="foundation.html">Abrir p&aacute;gina</a>
+        <h3>Fundacao</h3>
+        <p>Principios, metodologia, qualidade, workflow, arquitetura e modelo oficial das aulas.</p>
+        <a href="foundation.html">Abrir pagina</a>
       </div>
 
       <div class="card">
-        <h3>&#128269; Research</h3>
-        <p>Pesquisas, engenharia reversa, estudos de reposit&oacute;rios, v&iacute;deos, ferramentas e papers.</p>
-        <a href="research.html">Abrir p&aacute;gina</a>
+        <h3>Research</h3>
+        <p>Pesquisa, engenharia reversa, estudos de repositorios, videos, ferramentas e papers.</p>
+        <a href="research.html">Abrir pagina</a>
       </div>
 
       <div class="card">
-        <h3>&#127891; Academy</h3>
-        <p>Aulas, m&oacute;dulos, quizzes, PDFs, flashcards e trilhas de aprendizagem.</p>
-        <a href="academy.html">Abrir p&aacute;gina</a>
+        <h3>Academy</h3>
+        <p>Aulas, modulos, quizzes, PDFs, flashcards, trilhas e progresso do aluno.</p>
+        <a href="academy.html">Abrir pagina</a>
       </div>
 
       <div class="card">
-        <h3>&#129302; Agents</h3>
-        <p>Base de conhecimento para agentes inteligentes da PredixAI.</p>
-        <a href="agents.html">Abrir p&aacute;gina</a>
+        <h3>Agents</h3>
+        <p>Base de conhecimento para agentes inteligentes que ajudam a pesquisar, ensinar e produzir.</p>
+        <a href="agents.html">Abrir pagina</a>
       </div>
 
       <div class="card">
-        <h3>&#128227; Media</h3>
-        <p>Conte&uacute;do para Instagram, YouTube, TikTok, LinkedIn, blog e newsletter.</p>
-        <a href="media.html">Abrir p&aacute;gina</a>
+        <h3>Media</h3>
+        <p>Conteudo para Instagram, YouTube, TikTok, LinkedIn, blog, newsletter e captacao.</p>
+        <a href="media.html">Abrir pagina</a>
       </div>
 
       <div class="card">
-        <h3>&#129517; Roadmap</h3>
-        <p>Planejamento da evolu&ccedil;&atilde;o da Knowledge Hub, Academia e produtos futuros.</p>
-        <a href="roadmap.html">Abrir p&aacute;gina</a>
+        <h3>Roadmap</h3>
+        <p>Planejamento da evolucao da Knowledge Hub, Academia, agentes e produtos futuros.</p>
+        <a href="roadmap.html">Abrir pagina</a>
       </div>
+    </section>
+
+    <h2 class="section-title">Learning Experience</h2>
+
+    <section class="learning-path">
+      <h3>Construido para aprendizado continuo</h3>
+      <p>
+        A plataforma sera desenhada com Mobile First, UI, UX e LX. Isso significa:
+        aulas curtas, progresso visivel, quizzes objetivos, revisao por flashcards,
+        PDFs gratuitos e trilhas com evolucao clara.
+      </p>
     </section>
 
     <h2 class="section-title">Progresso atual</h2>
 
     <section class="progress-box">
-      <h3>Projeto 000 - Funda&ccedil;&atilde;o</h3>
+      <h3>Projeto 000 - Fundacao</h3>
       <div class="bar"><span></span></div>
-      <p>100% conclu&iacute;do: estrutura, documentos, scripts e GitHub Pages inicial.</p>
+      <p>100% concluido: estrutura, documentos, scripts, bootstrap e GitHub Pages inicial.</p>
     </section>
 
-    <h2 class="section-title">Pr&oacute;ximos passos</h2>
-
-    <section class="grid">
-      <div class="card">
-        <h3>Aula 1</h3>
-        <p>Criar a primeira aula oficial da Academia PredixAI.</p>
-      </div>
-
-      <div class="card">
-        <h3>PDF gratuito</h3>
-        <p>Gerar o primeiro material para atrair leads e audi&ecirc;ncia.</p>
-      </div>
-
-      <div class="card">
-        <h3>Conte&uacute;do social</h3>
-        <p>Transformar a aula em carrossel, shorts, artigo e base para agentes.</p>
-      </div>
+    <section class="final-cta">
+      <h2>Proximo marco: Aula 1</h2>
+      <p>
+        Agora que a fundacao esta publicada, o proximo passo e transformar o metodo
+        em uma primeira aula real da Academia PredixAI.
+      </p>
+      <a class="btn btn-primary" href="academy.html">Ver area Academy</a>
     </section>
   </main>
 
