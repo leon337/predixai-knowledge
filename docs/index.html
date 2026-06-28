@@ -1,13 +1,290 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>PredixAI Knowledge Hub</title>
+
+  <style>
+    :root {
+      --primary: #0F172A;
+      --blue: #2563EB;
+      --green: #10B981;
+      --bg: #F8FAFC;
+      --text: #111827;
+      --muted: #64748B;
+      --border: #CBD5E1;
+      --white: #FFFFFF;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      background: var(--primary);
+      color: var(--white);
+      padding: 24px 18px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+
+    header p {
+      margin-top: 8px;
+      color: #CBD5E1;
+      font-size: 15px;
+    }
+
+    nav {
+      display: flex;
+      gap: 10px;
+      overflow-x: auto;
+      padding: 12px;
+      background: var(--white);
+      border-bottom: 1px solid var(--border);
+    }
+
+    nav a {
+      white-space: nowrap;
+      text-decoration: none;
+      color: var(--primary);
+      font-weight: bold;
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: #E2E8F0;
+      font-size: 14px;
+    }
+
+    main {
+      padding: 20px 16px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .hero {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 24px;
+      margin-bottom: 20px;
+      box-shadow: 0 8px 20px rgba(15, 23, 42, 0.08);
+    }
+
+    .badge {
+      display: inline-block;
+      background: #DCFCE7;
+      color: #166534;
+      padding: 6px 12px;
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: bold;
+      margin-bottom: 12px;
+    }
+
+    .hero h2 {
+      margin: 0 0 12px;
+      font-size: 26px;
+      color: var(--primary);
+    }
+
+    .hero p {
+      color: var(--muted);
+    }
+
+    .button {
+      display: inline-block;
+      margin-top: 12px;
+      background: var(--blue);
+      color: var(--white);
+      padding: 12px 18px;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .section-title {
+      margin-top: 30px;
+      margin-bottom: 12px;
+      color: var(--primary);
+      font-size: 22px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 14px;
+    }
+
+    .card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 18px;
+    }
+
+    .card h3 {
+      margin: 0 0 8px;
+      color: var(--primary);
+    }
+
+    .card p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .progress-box {
+      background: var(--primary);
+      color: var(--white);
+      border-radius: 16px;
+      padding: 18px;
+      margin-top: 14px;
+    }
+
+    .bar {
+      height: 12px;
+      background: #334155;
+      border-radius: 999px;
+      overflow: hidden;
+      margin: 12px 0;
+    }
+
+    .bar span {
+      display: block;
+      height: 100%;
+      width: 100%;
+      background: var(--green);
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 16px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    @media (min-width: 768px) {
+      header h1 {
+        font-size: 40px;
+      }
+
+      .hero h2 {
+        font-size: 36px;
+      }
+
+      .grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+  </style>
 </head>
+
 <body>
-  <h1>PredixAI Knowledge Hub</h1>
-  <p>Base oficial de conhecimento da PredixAI BR.</p>
-  <p>Fundação, pesquisa, academia, agentes e produtos conectados pelo conhecimento.</p>
+  <header>
+    <h1>PredixAI Knowledge Hub</h1>
+    <p>O centro oficial de conhecimento da PredixAI BR.</p>
+  </header>
+
+  <nav>
+    <a href="#foundation">Fundação</a>
+    <a href="#research">Research</a>
+    <a href="#academy">Academy</a>
+    <a href="#agents">Agents</a>
+    <a href="#media">Media</a>
+    <a href="#roadmap">Roadmap</a>
+  </nav>
+
+  <main>
+    <section class="hero">
+      <span class="badge">Fundação v1.0 publicada</span>
+      <h2>Conhecimento que vira produto.</h2>
+      <p>
+        O PredixAI Knowledge Hub organiza pesquisas, aulas, agentes, artigos,
+        ferramentas e decisões para transformar conhecimento em soluções reais.
+      </p>
+      <a class="button" href="https://github.com/leon337/predixai-knowledge/tree/main/foundation">
+        Ver Fundação no GitHub
+      </a>
+    </section>
+
+    <h2 class="section-title">Áreas do Knowledge Hub</h2>
+
+    <section class="grid">
+      <div class="card" id="foundation">
+        <h3>📚 Fundação</h3>
+        <p>Documentos que definem os princípios, metodologia, qualidade, workflow e arquitetura.</p>
+      </div>
+
+      <div class="card" id="research">
+        <h3>🔎 Research</h3>
+        <p>Pesquisas, engenharia reversa, estudos de repositórios, vídeos, ferramentas e papers.</p>
+      </div>
+
+      <div class="card" id="academy">
+        <h3>🎓 Academy</h3>
+        <p>Aulas, módulos, quizzes, PDFs, flashcards e trilhas de aprendizagem.</p>
+      </div>
+
+      <div class="card" id="agents">
+        <h3>🤖 Agents</h3>
+        <p>Base de conhecimento para agentes inteligentes da PredixAI.</p>
+      </div>
+
+      <div class="card" id="media">
+        <h3>📣 Media</h3>
+        <p>Conteúdo para Instagram, YouTube, TikTok, LinkedIn, blog e newsletter.</p>
+      </div>
+
+      <div class="card" id="roadmap">
+        <h3>🧭 Roadmap</h3>
+        <p>Planejamento da evolução da Knowledge Hub, Academia e produtos futuros.</p>
+      </div>
+    </section>
+
+    <h2 class="section-title">Progresso atual</h2>
+
+    <section class="progress-box">
+      <h3>Projeto 000 — Fundação</h3>
+      <div class="bar">
+        <span></span>
+      </div>
+      <p>100% concluído: estrutura, documentos, scripts e GitHub Pages inicial.</p>
+    </section>
+
+    <h2 class="section-title">Próximos passos</h2>
+
+    <section class="grid">
+      <div class="card">
+        <h3>1. Aula 1</h3>
+        <p>Criar a primeira aula oficial da Academia PredixAI.</p>
+      </div>
+
+      <div class="card">
+        <h3>2. PDF</h3>
+        <p>Gerar o primeiro PDF gratuito para atrair leads.</p>
+      </div>
+
+      <div class="card">
+        <h3>3. Conteúdo</h3>
+        <p>Transformar a aula em carrossel, shorts, artigo e base para agentes.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    PredixAI BR — Aprenda a pensar. Construa o futuro.
+  </footer>
 </body>
 </html>
