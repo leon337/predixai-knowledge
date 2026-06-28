@@ -17,9 +17,7 @@
       --white: #FFFFFF;
     }
 
-    * {
-      box-sizing: border-box;
-    }
+    * { box-sizing: border-box; }
 
     body {
       margin: 0;
@@ -32,19 +30,17 @@
     header {
       background: var(--primary);
       color: var(--white);
-      padding: 24px 18px;
+      padding: 32px 18px;
       text-align: center;
     }
 
     header h1 {
       margin: 0;
-      font-size: 28px;
+      font-size: 34px;
     }
 
     header p {
-      margin-top: 8px;
       color: #CBD5E1;
-      font-size: 15px;
     }
 
     nav {
@@ -73,13 +69,16 @@
       margin: auto;
     }
 
-    .hero {
+    .hero, .card {
       background: var(--white);
       border: 1px solid var(--border);
       border-radius: 18px;
       padding: 24px;
-      margin-bottom: 20px;
       box-shadow: 0 8px 20px rgba(15, 23, 42, 0.08);
+    }
+
+    .hero {
+      margin-bottom: 28px;
     }
 
     .badge {
@@ -95,11 +94,11 @@
 
     .hero h2 {
       margin: 0 0 12px;
-      font-size: 26px;
+      font-size: 32px;
       color: var(--primary);
     }
 
-    .hero p {
+    .hero p, .card p {
       color: var(--muted);
     }
 
@@ -118,7 +117,7 @@
       margin-top: 30px;
       margin-bottom: 12px;
       color: var(--primary);
-      font-size: 22px;
+      font-size: 24px;
     }
 
     .grid {
@@ -127,22 +126,9 @@
       gap: 14px;
     }
 
-    .card {
-      background: var(--white);
-      border: 1px solid var(--border);
-      border-radius: 16px;
-      padding: 18px;
-    }
-
     .card h3 {
       margin: 0 0 8px;
       color: var(--primary);
-    }
-
-    .card p {
-      margin: 0;
-      color: var(--muted);
-      font-size: 15px;
     }
 
     .progress-box {
@@ -151,6 +137,10 @@
       border-radius: 16px;
       padding: 18px;
       margin-top: 14px;
+    }
+
+    .progress-box p {
+      color: var(--white);
     }
 
     .bar {
@@ -176,16 +166,12 @@
     }
 
     @media (min-width: 768px) {
-      header h1 {
-        font-size: 40px;
-      }
-
-      .hero h2 {
-        font-size: 36px;
-      }
-
       .grid {
         grid-template-columns: repeat(3, 1fr);
+      }
+
+      header h1 {
+        font-size: 42px;
       }
     }
   </style>
@@ -198,7 +184,7 @@
   </header>
 
   <nav>
-    <a href="foundation.html">FundaÃ§Ã£o</a>
+    <a href="foundation.html">Fundacao</a>
     <a href="research.html">Research</a>
     <a href="academy.html">Academy</a>
     <a href="agents.html">Agents</a>
@@ -208,83 +194,57 @@
 
   <main>
     <section class="hero">
-      <span class="badge">FundaÃ§Ã£o v1.0 publicada</span>
+      <span class="badge">Fundacao v1.0 publicada</span>
       <h2>Conhecimento que vira produto.</h2>
-      <p>
-        O PredixAI Knowledge Hub organiza pesquisas, aulas, agentes, artigos,
-        ferramentas e decisÃµes para transformar conhecimento em soluÃ§Ãµes reais.
-      </p>
-      <a class="button" href="https://github.com/leon337/predixai-knowledge/tree/main/foundation">
-        Ver FundaÃ§Ã£o no GitHub
-      </a>
+      <p>O PredixAI Knowledge Hub organiza pesquisas, aulas, agentes, artigos, ferramentas e decisoes para transformar conhecimento em solucoes reais.</p>
+      <a class="button" href="https://github.com/leon337/predixai-knowledge/tree/main/foundation">Ver Fundacao no GitHub</a>
     </section>
 
-    <h2 class="section-title">Ãreas do Knowledge Hub</h2>
+    <h2 class="section-title">Areas do Knowledge Hub</h2>
 
     <section class="grid">
-      <div class="card" id="foundation">
-        <h3>ðŸ“š FundaÃ§Ã£o</h3>
-        <p>Documentos que definem os princÃ­pios, metodologia, qualidade, workflow e arquitetura.</p>
+      <div class="card">
+        <h3>Fundacao</h3>
+        <p>Documentos que definem principios, metodologia, qualidade, workflow e arquitetura.</p>
       </div>
 
-      <div class="card" id="research">
-        <h3>ðŸ”Ž Research</h3>
-        <p>Pesquisas, engenharia reversa, estudos de repositÃ³rios, vÃ­deos, ferramentas e papers.</p>
+      <div class="card">
+        <h3>Research</h3>
+        <p>Pesquisas, engenharia reversa, estudos de repositorios, videos, ferramentas e papers.</p>
       </div>
 
-      <div class="card" id="academy">
-        <h3>ðŸŽ“ Academy</h3>
-        <p>Aulas, mÃ³dulos, quizzes, PDFs, flashcards e trilhas de aprendizagem.</p>
+      <div class="card">
+        <h3>Academy</h3>
+        <p>Aulas, modulos, quizzes, PDFs, flashcards e trilhas de aprendizagem.</p>
       </div>
 
-      <div class="card" id="agents">
-        <h3>ðŸ¤– Agents</h3>
+      <div class="card">
+        <h3>Agents</h3>
         <p>Base de conhecimento para agentes inteligentes da PredixAI.</p>
       </div>
 
-      <div class="card" id="media">
-        <h3>ðŸ“£ Media</h3>
-        <p>ConteÃºdo para Instagram, YouTube, TikTok, LinkedIn, blog e newsletter.</p>
+      <div class="card">
+        <h3>Media</h3>
+        <p>Conteudo para Instagram, YouTube, TikTok, LinkedIn, blog e newsletter.</p>
       </div>
 
-      <div class="card" id="roadmap">
-        <h3>ðŸ§­ Roadmap</h3>
-        <p>Planejamento da evoluÃ§Ã£o da Knowledge Hub, Academia e produtos futuros.</p>
+      <div class="card">
+        <h3>Roadmap</h3>
+        <p>Planejamento da evolucao da Knowledge Hub, Academia e produtos futuros.</p>
       </div>
     </section>
 
     <h2 class="section-title">Progresso atual</h2>
 
     <section class="progress-box">
-      <h3>Projeto 000 â€” FundaÃ§Ã£o</h3>
-      <div class="bar">
-        <span></span>
-      </div>
-      <p>100% concluÃ­do: estrutura, documentos, scripts e GitHub Pages inicial.</p>
-    </section>
-
-    <h2 class="section-title">PrÃ³ximos passos</h2>
-
-    <section class="grid">
-      <div class="card">
-        <h3>1. Aula 1</h3>
-        <p>Criar a primeira aula oficial da Academia PredixAI.</p>
-      </div>
-
-      <div class="card">
-        <h3>2. PDF</h3>
-        <p>Gerar o primeiro PDF gratuito para atrair leads.</p>
-      </div>
-
-      <div class="card">
-        <h3>3. ConteÃºdo</h3>
-        <p>Transformar a aula em carrossel, shorts, artigo e base para agentes.</p>
-      </div>
+      <h3>Projeto 000 - Fundacao</h3>
+      <div class="bar"><span></span></div>
+      <p>100% concluido: estrutura, documentos, scripts e GitHub Pages inicial.</p>
     </section>
   </main>
 
   <footer>
-    PredixAI BR â€” Aprenda a pensar. Construa o futuro.
+    PredixAI BR - Aprenda a pensar. Construa o futuro.
   </footer>
 </body>
 </html>
