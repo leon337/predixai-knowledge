@@ -4,124 +4,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Research - PredixAI Knowledge Hub</title>
-  <style>
-    :root {
-      --primary: #0F172A;
-      --blue: #2563EB;
-      --green: #10B981;
-      --bg: #F8FAFC;
-      --text: #111827;
-      --muted: #64748B;
-      --border: #CBD5E1;
-      --white: #FFFFFF;
-    }
-
-    * { box-sizing: border-box; }
-
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.6;
-    }
-
-    header {
-      background: var(--primary);
-      color: var(--white);
-      padding: 32px 18px;
-      text-align: center;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 32px;
-    }
-
-    header p {
-      color: #CBD5E1;
-      margin-top: 8px;
-    }
-
-    nav {
-      display: flex;
-      gap: 10px;
-      overflow-x: auto;
-      padding: 12px;
-      background: var(--white);
-      border-bottom: 1px solid var(--border);
-    }
-
-    nav a {
-      white-space: nowrap;
-      text-decoration: none;
-      color: var(--primary);
-      font-weight: bold;
-      padding: 8px 12px;
-      border-radius: 999px;
-      background: #E2E8F0;
-      font-size: 14px;
-    }
-
-    main {
-      padding: 20px 16px;
-      max-width: 1100px;
-      margin: auto;
-    }
-
-    .card {
-      background: var(--white);
-      border: 1px solid var(--border);
-      border-radius: 18px;
-      padding: 24px;
-      box-shadow: 0 8px 20px rgba(15, 23, 42, 0.08);
-    }
-
-    .badge {
-      display: inline-block;
-      background: #DCFCE7;
-      color: #166534;
-      padding: 6px 12px;
-      border-radius: 999px;
-      font-size: 13px;
-      font-weight: bold;
-      margin-bottom: 12px;
-    }
-
-    h2 {
-      color: var(--primary);
-      font-size: 28px;
-      margin-top: 0;
-    }
-
-    p, li {
-      color: var(--muted);
-    }
-
-    .button {
-      display: inline-block;
-      margin-top: 16px;
-      background: var(--blue);
-      color: var(--white);
-      padding: 12px 18px;
-      border-radius: 12px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    footer {
-      text-align: center;
-      padding: 30px 16px;
-      color: var(--muted);
-      font-size: 14px;
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
   <header>
+    <div class="badge">Pesquisa aplicada</div>
     <h1>Research</h1>
-    <p>PredixAI Knowledge Hub</p>
+    <p>Area dedicada a transformar fontes externas em conhecimento confiavel para a PredixAI.</p>
   </header>
 
   <nav>
@@ -135,23 +25,51 @@
   </nav>
 
   <main>
-    <section class="card">
-      <span class="badge">Pagina v1.0</span>
-      <h2>Research</h2>
-      <p>Area dedicada a pesquisas, engenharia reversa, estudos de repositorios, videos, ferramentas e papers.</p>
-
-      <h3>Objetivo</h3>
-      <p>Organizar esta area dentro do ecossistema PredixAI para transformar conhecimento em conteudo, produtos, agentes e solucoes praticas.</p>
-
-      <h3>Proximos passos</h3>
-      <ul>
-        <li>Adicionar conteudo oficial.</li>
-        <li>Conectar documentos do GitHub.</li>
-        <li>Criar paginas especificas.</li>
-        <li>Aplicar melhorias Mobile First.</li>
-      </ul>
-
+    <section class="hero">
+      <h2>Objetivo da area</h2>
+      <p>Criar um pipeline de pesquisa que converte repositorios, videos, artigos e ferramentas em conhecimento estruturado.</p>
       <a class="button" href="index.html">Voltar para Home</a>
+    </section>
+
+    <h2 class="section-title">Estrutura</h2>
+    <p class="section-subtitle">Blocos principais desta area dentro do ecossistema PredixAI.</p>
+
+    <section class="grid">
+      <div class="card">
+        <h3>Repositorio GitHub</h3>
+        <p>Estudo de projetos, estrutura, dependencias e decisoes.</p>
+      </div>
+      <div class="card">
+        <h3>Videos e podcasts</h3>
+        <p>Extracao de conceitos, timestamps e licoes aprendidas.</p>
+      </div>
+      <div class="card">
+        <h3>Ferramentas</h3>
+        <p>Analise de custo, alternativas gratis, riscos e aplicacao.</p>
+      </div>
+      <div class="card">
+        <h3>Papers e docs</h3>
+        <p>Validacao tecnica com fontes mais confiaveis.</p>
+      </div>
+      <div class="card">
+        <h3>Engenharia reversa</h3>
+        <p>Entender como algo funciona e como aplicar na PredixAI.</p>
+      </div>
+      <div class="card">
+        <h3>Relatorios</h3>
+        <p>Gerar resumos, fichas tecnicas e conteudo derivado.</p>
+      </div>
+
+    </section>
+
+    <section class="panel path">
+      <h2>Proximos passos</h2>
+      <ul>
+        <li>Retomar estudo dos repositorios do Fabio Akita.</li>
+        <li>Criar primeiro relatorio de pesquisa.</li>
+        <li>Transformar pesquisa em Aula 1.</li>
+        <li>Criar checklist de avaliacao de ferramentas.</li>
+      </ul>
     </section>
   </main>
 

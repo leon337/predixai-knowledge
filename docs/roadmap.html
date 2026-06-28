@@ -4,124 +4,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Roadmap - PredixAI Knowledge Hub</title>
-  <style>
-    :root {
-      --primary: #0F172A;
-      --blue: #2563EB;
-      --green: #10B981;
-      --bg: #F8FAFC;
-      --text: #111827;
-      --muted: #64748B;
-      --border: #CBD5E1;
-      --white: #FFFFFF;
-    }
-
-    * { box-sizing: border-box; }
-
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.6;
-    }
-
-    header {
-      background: var(--primary);
-      color: var(--white);
-      padding: 32px 18px;
-      text-align: center;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 32px;
-    }
-
-    header p {
-      color: #CBD5E1;
-      margin-top: 8px;
-    }
-
-    nav {
-      display: flex;
-      gap: 10px;
-      overflow-x: auto;
-      padding: 12px;
-      background: var(--white);
-      border-bottom: 1px solid var(--border);
-    }
-
-    nav a {
-      white-space: nowrap;
-      text-decoration: none;
-      color: var(--primary);
-      font-weight: bold;
-      padding: 8px 12px;
-      border-radius: 999px;
-      background: #E2E8F0;
-      font-size: 14px;
-    }
-
-    main {
-      padding: 20px 16px;
-      max-width: 1100px;
-      margin: auto;
-    }
-
-    .card {
-      background: var(--white);
-      border: 1px solid var(--border);
-      border-radius: 18px;
-      padding: 24px;
-      box-shadow: 0 8px 20px rgba(15, 23, 42, 0.08);
-    }
-
-    .badge {
-      display: inline-block;
-      background: #DCFCE7;
-      color: #166534;
-      padding: 6px 12px;
-      border-radius: 999px;
-      font-size: 13px;
-      font-weight: bold;
-      margin-bottom: 12px;
-    }
-
-    h2 {
-      color: var(--primary);
-      font-size: 28px;
-      margin-top: 0;
-    }
-
-    p, li {
-      color: var(--muted);
-    }
-
-    .button {
-      display: inline-block;
-      margin-top: 16px;
-      background: var(--blue);
-      color: var(--white);
-      padding: 12px 18px;
-      border-radius: 12px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    footer {
-      text-align: center;
-      padding: 30px 16px;
-      color: var(--muted);
-      font-size: 14px;
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
   <header>
+    <div class="badge">Evolucao planejada</div>
     <h1>Roadmap</h1>
-    <p>PredixAI Knowledge Hub</p>
+    <p>Area que organiza os proximos marcos da Knowledge Hub, Academia, agentes e produtos.</p>
   </header>
 
   <nav>
@@ -135,23 +25,51 @@
   </nav>
 
   <main>
-    <section class="card">
-      <span class="badge">Pagina v1.0</span>
-      <h2>Roadmap</h2>
-      <p>Planejamento da evolucao da Knowledge Hub, Academia, agentes e produtos futuros.</p>
-
-      <h3>Objetivo</h3>
-      <p>Organizar esta area dentro do ecossistema PredixAI para transformar conhecimento em conteudo, produtos, agentes e solucoes praticas.</p>
-
-      <h3>Proximos passos</h3>
-      <ul>
-        <li>Adicionar conteudo oficial.</li>
-        <li>Conectar documentos do GitHub.</li>
-        <li>Criar paginas especificas.</li>
-        <li>Aplicar melhorias Mobile First.</li>
-      </ul>
-
+    <section class="hero">
+      <h2>Objetivo da area</h2>
+      <p>Manter clareza sobre o que ja foi feito, o que esta em andamento e o que vira produto.</p>
       <a class="button" href="index.html">Voltar para Home</a>
+    </section>
+
+    <h2 class="section-title">Estrutura</h2>
+    <p class="section-subtitle">Blocos principais desta area dentro do ecossistema PredixAI.</p>
+
+    <section class="grid">
+      <div class="card">
+        <h3>Projeto 000</h3>
+        <p>Fundacao, scripts, estrutura e GitHub Pages.</p>
+      </div>
+      <div class="card">
+        <h3>Projeto 001</h3>
+        <p>Knowledge Core e primeira aula real.</p>
+      </div>
+      <div class="card">
+        <h3>Projeto 002</h3>
+        <p>Publicacao de PDFs e captacao de leads.</p>
+      </div>
+      <div class="card">
+        <h3>Projeto 003</h3>
+        <p>Agentes especializados.</p>
+      </div>
+      <div class="card">
+        <h3>Projeto 004</h3>
+        <p>Plataforma interativa.</p>
+      </div>
+      <div class="card">
+        <h3>Projeto 005</h3>
+        <p>Produto comercial educacional.</p>
+      </div>
+
+    </section>
+
+    <section class="panel path">
+      <h2>Proximos passos</h2>
+      <ul>
+        <li>Fechar validacao visual das paginas.</li>
+        <li>Criar Aula 1.</li>
+        <li>Gerar primeiro PDF gratuito.</li>
+        <li>Comecar captacao de audiencia.</li>
+      </ul>
     </section>
   </main>
 
