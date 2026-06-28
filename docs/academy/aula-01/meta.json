@@ -1,6 +1,6 @@
 ﻿{
-    "module":  "Modulo 01 - Mentalidade do Arquiteto",
+    "slug":  "aula-01",
     "title":  "Aula 01 - Engenharia Reversa de Conhecimento",
-    "status":  "Publicado",
-    "slug":  "aula-01"
+    "module":  "Modulo 01 - Mentalidade do Arquiteto",
+    "status":  "Publicado"
 }

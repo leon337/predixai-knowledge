@@ -1,12 +1,12 @@
-# Aula 01 — O que é Engenharia Reversa de Conhecimento
+﻿# Aula 01 â€” O que Ã© Engenharia Reversa de Conhecimento
 
-## Identificação
+## IdentificaÃ§Ã£o
 
 * Programa: Academia PredixAI
-* Módulo: 01 — Mentalidade do Arquiteto
+* MÃ³dulo: 01 â€” Mentalidade do Arquiteto
 * Aula: 01
 * Tema: Engenharia Reversa de Conhecimento
-* Nível: Iniciante
+* NÃ­vel: Iniciante
 * Status: Rascunho oficial v1.0
 
 ---
@@ -14,152 +14,152 @@
 ## Painel de Progresso
 
 Projeto: PredixAI Knowledge Hub
-Fase atual: Produção da primeira aula
-Etapa: Aula 01 em construção
+Fase atual: ProduÃ§Ã£o da primeira aula
+Etapa: Aula 01 em construÃ§Ã£o
 
 Progresso:
 
-* [x] Fundação criada
+* [x] FundaÃ§Ã£o criada
 * [x] Site publicado
 * [x] Estrutura da Academy iniciada
 * [ ] Aula 01 escrita
 * [ ] Quiz criado
 * [ ] PDF gerado
-* [ ] Página HTML publicada
+* [ ] PÃ¡gina HTML publicada
 
 ---
 
 ## Objetivo da Aula
 
-Ao final desta aula, você deve entender:
+Ao final desta aula, vocÃª deve entender:
 
-1. O que é engenharia reversa de conhecimento.
-2. Por que ela é importante para estudar IA, programação e tecnologia.
-3. Como transformar conteúdo disperso em conhecimento organizado.
-4. Como a PredixAI usa esse método para criar aulas, agentes e produtos.
-5. Como aplicar esse raciocínio em repositórios, vídeos, artigos e ferramentas.
+1. O que Ã© engenharia reversa de conhecimento.
+2. Por que ela Ã© importante para estudar IA, programaÃ§Ã£o e tecnologia.
+3. Como transformar conteÃºdo disperso em conhecimento organizado.
+4. Como a PredixAI usa esse mÃ©todo para criar aulas, agentes e produtos.
+5. Como aplicar esse raciocÃ­nio em repositÃ³rios, vÃ­deos, artigos e ferramentas.
 
 ---
 
-## 1. Introdução
+## 1. IntroduÃ§Ã£o
 
-Engenharia reversa de conhecimento é o processo de pegar algo pronto, estudar profundamente como funciona e transformar esse estudo em aprendizado organizado.
+Engenharia reversa de conhecimento Ã© o processo de pegar algo pronto, estudar profundamente como funciona e transformar esse estudo em aprendizado organizado.
 
-Não é copiar.
+NÃ£o Ã© copiar.
 
-É entender.
+Ã‰ entender.
 
-Quando estudamos um repositório, um vídeo técnico, uma ferramenta ou um artigo, não queremos apenas consumir informação. Queremos descobrir:
+Quando estudamos um repositÃ³rio, um vÃ­deo tÃ©cnico, uma ferramenta ou um artigo, nÃ£o queremos apenas consumir informaÃ§Ã£o. Queremos descobrir:
 
 * qual problema aquilo resolve;
 * por que foi criado;
 * como foi organizado;
-* quais decisões foram tomadas;
+* quais decisÃµes foram tomadas;
 * quais tecnologias foram usadas;
 * o que podemos aprender;
 * o que podemos reutilizar;
 * o que pode virar aula, produto ou agente.
 
-Na PredixAI, conhecimento não pode ficar solto. Ele precisa virar patrimônio.
+Na PredixAI, conhecimento nÃ£o pode ficar solto. Ele precisa virar patrimÃ´nio.
 
 ---
 
-## 2. Definição Simples
+## 2. DefiniÃ§Ã£o Simples
 
-Engenharia reversa de conhecimento é estudar algo pronto para entender a lógica por trás da construção.
+Engenharia reversa de conhecimento Ã© estudar algo pronto para entender a lÃ³gica por trÃ¡s da construÃ§Ã£o.
 
 Exemplo simples:
 
-Uma pessoa vê uma casa pronta.
+Uma pessoa vÃª uma casa pronta.
 
-O usuário comum olha e diz:
+O usuÃ¡rio comum olha e diz:
 
 > Que casa bonita.
 
 O arquiteto olha e pergunta:
 
-> Qual foi a fundação usada?
-> Como os cômodos foram distribuídos?
-> Por que essa parede está aqui?
+> Qual foi a fundaÃ§Ã£o usada?
+> Como os cÃ´modos foram distribuÃ­dos?
+> Por que essa parede estÃ¡ aqui?
 > Qual problema esse projeto resolveu?
 > O que eu posso aprender com isso?
 
-Essa é a diferença entre consumir e analisar.
+Essa Ã© a diferenÃ§a entre consumir e analisar.
 
 ---
 
-## 3. Exemplo na Programação
+## 3. Exemplo na ProgramaÃ§Ã£o
 
-Imagine que encontramos um repositório no GitHub.
+Imagine que encontramos um repositÃ³rio no GitHub.
 
 Um iniciante pode olhar e pensar:
 
-> Tem muitos arquivos. Não entendi nada.
+> Tem muitos arquivos. NÃ£o entendi nada.
 
 Um arquiteto pensa:
 
-> Qual é o objetivo desse projeto?
+> Qual Ã© o objetivo desse projeto?
 > Qual arquivo inicia tudo?
-> Onde estão as regras principais?
+> Onde estÃ£o as regras principais?
 > Quais bibliotecas ele usa?
-> Como os módulos se comunicam?
+> Como os mÃ³dulos se comunicam?
 > O que posso aplicar no meu projeto?
 
-O mesmo repositório pode ser confuso para quem apenas olha, mas valioso para quem sabe analisar.
+O mesmo repositÃ³rio pode ser confuso para quem apenas olha, mas valioso para quem sabe analisar.
 
 ---
 
-## 4. O Método PredixAI
+## 4. O MÃ©todo PredixAI
 
 Na PredixAI, usamos um processo simples:
 
-### Etapa 1 — Identificar
+### Etapa 1 â€” Identificar
 
 Primeiro entendemos o que estamos estudando.
 
 Perguntas:
 
-* O que é isso?
+* O que Ã© isso?
 * Quem criou?
 * Para que serve?
 * Qual problema resolve?
 
 ---
 
-### Etapa 2 — Desmontar
+### Etapa 2 â€” Desmontar
 
-Depois dividimos o conteúdo em partes menores.
+Depois dividimos o conteÃºdo em partes menores.
 
-Exemplo em um repositório:
+Exemplo em um repositÃ³rio:
 
 * README
 * pastas
 * arquivos principais
-* dependências
+* dependÃªncias
 * comandos
 * exemplos
 * testes
-* documentação
+* documentaÃ§Ã£o
 
 ---
 
-### Etapa 3 — Interpretar
+### Etapa 3 â€” Interpretar
 
-Agora tentamos entender a lógica por trás.
+Agora tentamos entender a lÃ³gica por trÃ¡s.
 
 Perguntas:
 
 * Por que foi feito assim?
 * Havia outra forma?
-* Essa decisão é boa?
+* Essa decisÃ£o Ã© boa?
 * Quais riscos existem?
 * O que parece importante?
 
 ---
 
-### Etapa 4 — Reorganizar
+### Etapa 4 â€” Reorganizar
 
-Depois transformamos a análise em conhecimento estruturado.
+Depois transformamos a anÃ¡lise em conhecimento estruturado.
 
 Pode virar:
 
@@ -175,9 +175,9 @@ Pode virar:
 
 ---
 
-### Etapa 5 — Aplicar
+### Etapa 5 â€” Aplicar
 
-Conhecimento só tem valor quando vira ação.
+Conhecimento sÃ³ tem valor quando vira aÃ§Ã£o.
 
 Na PredixAI, cada estudo deve responder:
 
@@ -187,42 +187,42 @@ Na PredixAI, cada estudo deve responder:
 
 ## 5. Por que isso importa?
 
-Porque a maioria das pessoas apenas consome conteúdo.
+Porque a maioria das pessoas apenas consome conteÃºdo.
 
-Elas assistem vídeos, leem posts, salvam links e depois esquecem.
+Elas assistem vÃ­deos, leem posts, salvam links e depois esquecem.
 
 A PredixAI faz diferente.
 
-Nós transformamos conteúdo em sistema.
+NÃ³s transformamos conteÃºdo em sistema.
 
-Um único estudo pode gerar:
+Um Ãºnico estudo pode gerar:
 
 * uma aula;
 * um PDF;
-* um vídeo;
+* um vÃ­deo;
 * um post;
 * um agente;
-* uma automação;
+* uma automaÃ§Ã£o;
 * uma melhoria no produto;
-* uma nova ideia de negócio.
+* uma nova ideia de negÃ³cio.
 
-Isso é multiplicação de conhecimento.
+Isso Ã© multiplicaÃ§Ã£o de conhecimento.
 
 ---
 
-## 6. Aplicação Real na PredixAI
+## 6. AplicaÃ§Ã£o Real na PredixAI
 
-Nós já aplicamos esse método ao construir o Knowledge Hub.
+NÃ³s jÃ¡ aplicamos esse mÃ©todo ao construir o Knowledge Hub.
 
 Em vez de criar apenas um site, fizemos:
 
-1. Repositório no GitHub.
+1. RepositÃ³rio no GitHub.
 2. Estrutura de pastas.
-3. Documentos da Fundação.
-4. Scripts de automação.
+3. Documentos da FundaÃ§Ã£o.
+4. Scripts de automaÃ§Ã£o.
 5. GitHub Pages.
 6. Landing page.
-7. Páginas internas.
+7. PÃ¡ginas internas.
 8. Agora, a primeira aula.
 
 Isso mostra uma ideia importante:
@@ -239,29 +239,29 @@ Sempre que estudar algo, use este checklist:
 * [ ] Identifiquei o problema que resolve?
 * [ ] Analisei a estrutura?
 * [ ] Separei conceitos principais?
-* [ ] Identifiquei decisões importantes?
+* [ ] Identifiquei decisÃµes importantes?
 * [ ] Avaliei ferramentas usadas?
 * [ ] Listei pontos fortes?
-* [ ] Listei limitações?
+* [ ] Listei limitaÃ§Ãµes?
 * [ ] Pensei como aplicar na PredixAI?
-* [ ] Transformei em material reutilizável?
+* [ ] Transformei em material reutilizÃ¡vel?
 
 ---
 
 ## 8. Erro Comum
 
-O erro mais comum é querer entender tudo de uma vez.
+O erro mais comum Ã© querer entender tudo de uma vez.
 
-Isso gera confusão.
+Isso gera confusÃ£o.
 
-O correto é seguir camadas:
+O correto Ã© seguir camadas:
 
 1. Primeiro entender o objetivo.
 2. Depois entender a estrutura.
 3. Depois entender os detalhes.
-4. Só então pensar em aplicar.
+4. SÃ³ entÃ£o pensar em aplicar.
 
-Não comece pelo código mais difícil.
+NÃ£o comece pelo cÃ³digo mais difÃ­cil.
 
 Comece pelo contexto.
 
@@ -269,29 +269,29 @@ Comece pelo contexto.
 
 ## 9. Analogia Simples
 
-Estudar sem engenharia reversa é como entrar em uma oficina cheia de peças jogadas.
+Estudar sem engenharia reversa Ã© como entrar em uma oficina cheia de peÃ§as jogadas.
 
-Estudar com engenharia reversa é separar:
+Estudar com engenharia reversa Ã© separar:
 
 * motor;
 * parafusos;
 * ferramentas;
 * manual;
-* função de cada peça;
+* funÃ§Ã£o de cada peÃ§a;
 * ordem de montagem.
 
-A peça sozinha confunde.
-A peça dentro do sistema ensina.
+A peÃ§a sozinha confunde.
+A peÃ§a dentro do sistema ensina.
 
 ---
 
-## 10. Lição Principal
+## 10. LiÃ§Ã£o Principal
 
-A mentalidade do arquiteto não é perguntar apenas:
+A mentalidade do arquiteto nÃ£o Ã© perguntar apenas:
 
 > Como eu copio isso?
 
-A pergunta certa é:
+A pergunta certa Ã©:
 
 > Como isso funciona e como posso transformar esse entendimento em valor?
 
@@ -299,57 +299,57 @@ A pergunta certa é:
 
 ## Resumo Executivo
 
-Engenharia reversa de conhecimento é o método de estudar algo pronto, desmontar sua lógica, entender suas decisões e transformar isso em conhecimento reutilizável.
+Engenharia reversa de conhecimento Ã© o mÃ©todo de estudar algo pronto, desmontar sua lÃ³gica, entender suas decisÃµes e transformar isso em conhecimento reutilizÃ¡vel.
 
-Na PredixAI, esse método será usado para estudar repositórios, vídeos, artigos, ferramentas e projetos.
+Na PredixAI, esse mÃ©todo serÃ¡ usado para estudar repositÃ³rios, vÃ­deos, artigos, ferramentas e projetos.
 
-O objetivo não é apenas aprender.
-O objetivo é transformar aprendizado em aulas, agentes, produtos e soluções reais.
+O objetivo nÃ£o Ã© apenas aprender.
+O objetivo Ã© transformar aprendizado em aulas, agentes, produtos e soluÃ§Ãµes reais.
 
 ---
 
-## Glossário
+## GlossÃ¡rio
 
 ### Engenharia Reversa
 
-Processo de estudar algo pronto para entender como foi construído.
+Processo de estudar algo pronto para entender como foi construÃ­do.
 
 ### Conhecimento Estruturado
 
-Informação organizada de forma clara, reutilizável e versionada.
+InformaÃ§Ã£o organizada de forma clara, reutilizÃ¡vel e versionada.
 
-### Repositório
+### RepositÃ³rio
 
 Local onde ficam arquivos de um projeto, normalmente no GitHub.
 
-### Método
+### MÃ©todo
 
-Sequência organizada de passos para alcançar um resultado.
+SequÃªncia organizada de passos para alcanÃ§ar um resultado.
 
-### Patrimônio Intelectual
+### PatrimÃ´nio Intelectual
 
 Conhecimento acumulado que gera valor para uma pessoa, empresa ou projeto.
 
 ---
 
-## Exercício Prático
+## ExercÃ­cio PrÃ¡tico
 
-Escolha um vídeo, artigo ou repositório simples e responda:
+Escolha um vÃ­deo, artigo ou repositÃ³rio simples e responda:
 
 1. Qual problema ele resolve?
-2. Quem é o público?
-3. Quais são as partes principais?
+2. Quem Ã© o pÃºblico?
+3. Quais sÃ£o as partes principais?
 4. Que ferramentas aparecem?
 5. O que pode ser usado na PredixAI?
 
 ---
 
-## Quiz — Aula 01
+## Quiz â€” Aula 01
 
-### 1. O que é engenharia reversa de conhecimento?
+### 1. O que Ã© engenharia reversa de conhecimento?
 
 A) Copiar o trabalho de outra pessoa.
-B) Estudar algo pronto para entender sua lógica e transformar em conhecimento.
+B) Estudar algo pronto para entender sua lÃ³gica e transformar em conhecimento.
 C) Baixar arquivos da internet.
 D) Criar um site sem planejamento.
 E) Decorar comandos.
@@ -358,9 +358,9 @@ Resposta correta: B
 
 ---
 
-### 2. Qual é o primeiro passo ao estudar um repositório?
+### 2. Qual Ã© o primeiro passo ao estudar um repositÃ³rio?
 
-A) Editar o código.
+A) Editar o cÃ³digo.
 B) Apagar arquivos.
 C) Entender o objetivo do projeto.
 D) Criar um commit.
@@ -375,8 +375,8 @@ Resposta correta: C
 A) Sim.
 B) Apenas se for curto.
 C) Apenas se for ideia inicial.
-D) Não. Deve ser documentado e versionado.
-E) Depende do horário.
+D) NÃ£o. Deve ser documentado e versionado.
+E) Depende do horÃ¡rio.
 
 Resposta correta: D
 
@@ -384,23 +384,23 @@ Resposta correta: D
 
 ### 4. Qual pergunta representa melhor a mentalidade do arquiteto?
 
-A) Como copio isso rápido?
+A) Como copio isso rÃ¡pido?
 B) Como ignoro essa parte?
 C) Como isso funciona e como posso aplicar?
-D) Como faço sem estudar?
+D) Como faÃ§o sem estudar?
 E) Como pulo para o final?
 
 Resposta correta: C
 
 ---
 
-### 5. Um único estudo pode gerar quais ativos?
+### 5. Um Ãºnico estudo pode gerar quais ativos?
 
-A) Apenas uma anotação.
+A) Apenas uma anotaÃ§Ã£o.
 B) Apenas um print.
-C) Aula, PDF, vídeo, agente, artigo e produto.
-D) Apenas um comentário.
-E) Nada reutilizável.
+C) Aula, PDF, vÃ­deo, agente, artigo e produto.
+D) Apenas um comentÃ¡rio.
+E) Nada reutilizÃ¡vel.
 
 Resposta correta: C
 
@@ -408,59 +408,59 @@ Resposta correta: C
 
 ### 6. Qual erro comum devemos evitar?
 
-A) Começar pelo contexto.
+A) ComeÃ§ar pelo contexto.
 B) Organizar as ideias.
 C) Querer entender tudo de uma vez.
 D) Criar checklist.
-E) Documentar decisões.
+E) Documentar decisÃµes.
 
 Resposta correta: C
 
 ---
 
-### 7. O que significa transformar conhecimento em patrimônio?
+### 7. O que significa transformar conhecimento em patrimÃ´nio?
 
-A) Guardar tudo na memória.
+A) Guardar tudo na memÃ³ria.
 B) Registrar, organizar e reutilizar o conhecimento.
-C) Apagar conteúdos antigos.
+C) Apagar conteÃºdos antigos.
 D) Copiar sem entender.
-E) Não compartilhar nada.
+E) NÃ£o compartilhar nada.
 
 Resposta correta: B
 
 ---
 
-### 8. O que a etapa “Desmontar” significa?
+### 8. O que a etapa â€œDesmontarâ€ significa?
 
 A) Apagar o projeto.
-B) Separar o conteúdo em partes menores para entender.
+B) Separar o conteÃºdo em partes menores para entender.
 C) Parar o estudo.
-D) Criar outro repositório sem motivo.
+D) Criar outro repositÃ³rio sem motivo.
 E) Trocar o nome dos arquivos.
 
 Resposta correta: B
 
 ---
 
-### 9. Por que a engenharia reversa é importante para IA e programação?
+### 9. Por que a engenharia reversa Ã© importante para IA e programaÃ§Ã£o?
 
 A) Porque evita estudar.
-B) Porque permite entender sistemas, decisões e aplicações práticas.
+B) Porque permite entender sistemas, decisÃµes e aplicaÃ§Ãµes prÃ¡ticas.
 C) Porque substitui todo conhecimento humano.
 D) Porque remove a necessidade de praticar.
-E) Porque serve apenas para copiar código.
+E) Porque serve apenas para copiar cÃ³digo.
 
 Resposta correta: B
 
 ---
 
-### 10. Qual é a regra central da PredixAI sobre conhecimento?
+### 10. Qual Ã© a regra central da PredixAI sobre conhecimento?
 
-A) Consumir rápido e esquecer.
+A) Consumir rÃ¡pido e esquecer.
 B) Guardar tudo em prints.
-C) Estudar uma vez, documentar corretamente e reutilizar várias vezes.
+C) Estudar uma vez, documentar corretamente e reutilizar vÃ¡rias vezes.
 D) Nunca criar documentos.
-E) Usar apenas vídeos curtos.
+E) Usar apenas vÃ­deos curtos.
 
 Resposta correta: C
 
@@ -485,13 +485,13 @@ Resposta correta: C
 
 ### Flashcard 1
 
-Pergunta: O que é engenharia reversa de conhecimento?
-Resposta: Estudar algo pronto para entender sua lógica e transformar em conhecimento reutilizável.
+Pergunta: O que Ã© engenharia reversa de conhecimento?
+Resposta: Estudar algo pronto para entender sua lÃ³gica e transformar em conhecimento reutilizÃ¡vel.
 
 ### Flashcard 2
 
-Pergunta: Qual é o primeiro passo da análise?
-Resposta: Entender o objetivo do que está sendo estudado.
+Pergunta: Qual Ã© o primeiro passo da anÃ¡lise?
+Resposta: Entender o objetivo do que estÃ¡ sendo estudado.
 
 ### Flashcard 3
 
@@ -505,15 +505,15 @@ Resposta: Tentar entender tudo de uma vez.
 
 ### Flashcard 5
 
-Pergunta: Qual é a mentalidade do arquiteto?
-Resposta: Entender como algo funciona e como aplicar esse entendimento em valor prático.
+Pergunta: Qual Ã© a mentalidade do arquiteto?
+Resposta: Entender como algo funciona e como aplicar esse entendimento em valor prÃ¡tico.
 
 ---
 
-## Lição Aprendida
+## LiÃ§Ã£o Aprendida
 
-Quem apenas consome conteúdo acumula informação.
-Quem pratica engenharia reversa transforma informação em conhecimento.
+Quem apenas consome conteÃºdo acumula informaÃ§Ã£o.
+Quem pratica engenharia reversa transforma informaÃ§Ã£o em conhecimento.
 Quem organiza conhecimento cria produtos.
 
 ---
@@ -522,7 +522,7 @@ Quem organiza conhecimento cria produtos.
 
 Esta aula pode gerar:
 
-* Página HTML da aula.
+* PÃ¡gina HTML da aula.
 * PDF gratuito.
 * Quiz interativo.
 * Carrossel para Instagram.
@@ -533,8 +533,9 @@ Esta aula pode gerar:
 
 ---
 
-## Próximo Passo
+## PrÃ³ximo Passo
 
-A próxima aula será:
+A prÃ³xima aula serÃ¡:
 
-Aula 02 — Como um arquiteto estuda um repositório.
+Aula 02 â€” Como um arquiteto estuda um repositÃ³rio.
+

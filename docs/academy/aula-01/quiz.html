@@ -1,0 +1,367 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quiz - Aula 01 - Engenharia Reversa de Conhecimento</title>
+  <link rel="stylesheet" href="../../styles.css" />
+  <style>
+    .quiz-card {
+      background: #FFFFFF;
+      border: 1px solid #CBD5E1;
+      border-radius: 18px;
+      padding: 22px;
+      margin-bottom: 16px;
+      box-shadow: 0 8px 20px rgba(15, 23, 42, 0.08);
+    }
+
+    .option {
+      display: block;
+      margin: 10px 0;
+      padding: 12px;
+      border: 1px solid #CBD5E1;
+      border-radius: 12px;
+      cursor: pointer;
+    }
+
+    .result {
+      font-weight: bold;
+      margin-top: 18px;
+      font-size: 20px;
+      color: #0F172A;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="badge">Quiz</div>
+    <h1>Aula 01 - Engenharia Reversa de Conhecimento</h1>
+    <p>Teste de aprendizagem da Academia PredixAI</p>
+  </header>
+
+  <nav>
+    <a href="../../index.html">Home</a>
+    <a href="../../academy.html">Academy</a>
+    <a href="index.html">Voltar para aula</a>
+  </nav>
+
+  <main>
+    <form id="quiz"></form>
+    <button class="button" onclick="checkQuiz()">Corrigir Quiz</button>
+    <div class="result" id="result"></div>
+  </main>
+
+  <footer>
+    PredixAI BR - Aprenda a pensar. Construa o futuro.
+  </footer>
+
+  <script>
+    const quizData = [
+    {
+        "number":  "1",
+        "question":  "O que Ã© engenharia reversa de conhecimento?",
+        "options":  [
+                        {
+                            "letter":  "A",
+                            "text":  "Copiar o trabalho de outra pessoa.\r"
+                        },
+                        {
+                            "letter":  "B",
+                            "text":  "Estudar algo pronto para entender sua lÃ³gica e transformar em conhecimento.\r"
+                        },
+                        {
+                            "letter":  "C",
+                            "text":  "Baixar arquivos da internet.\r"
+                        },
+                        {
+                            "letter":  "D",
+                            "text":  "Criar um site sem planejamento.\r"
+                        },
+                        {
+                            "letter":  "E",
+                            "text":  "Decorar comandos."
+                        }
+                    ],
+        "answer":  "B"
+    },
+    {
+        "number":  "2",
+        "question":  "Qual Ã© o primeiro passo ao estudar um repositÃ³rio?",
+        "options":  [
+                        {
+                            "letter":  "A",
+                            "text":  "Editar o cÃ³digo.\r"
+                        },
+                        {
+                            "letter":  "B",
+                            "text":  "Apagar arquivos.\r"
+                        },
+                        {
+                            "letter":  "C",
+                            "text":  "Entender o objetivo do projeto.\r"
+                        },
+                        {
+                            "letter":  "D",
+                            "text":  "Criar um commit.\r"
+                        },
+                        {
+                            "letter":  "E",
+                            "text":  "Rodar qualquer comando."
+                        }
+                    ],
+        "answer":  "C"
+    },
+    {
+        "number":  "3",
+        "question":  "Na PredixAI, conhecimento importante deve ficar apenas no chat?",
+        "options":  [
+                        {
+                            "letter":  "A",
+                            "text":  "Sim.\r"
+                        },
+                        {
+                            "letter":  "B",
+                            "text":  "Apenas se for curto.\r"
+                        },
+                        {
+                            "letter":  "C",
+                            "text":  "Apenas se for ideia inicial.\r"
+                        },
+                        {
+                            "letter":  "D",
+                            "text":  "NÃ£o. Deve ser documentado e versionado.\r"
+                        },
+                        {
+                            "letter":  "E",
+                            "text":  "Depende do horÃ¡rio."
+                        }
+                    ],
+        "answer":  "D"
+    },
+    {
+        "number":  "4",
+        "question":  "Qual pergunta representa melhor a mentalidade do arquiteto?",
+        "options":  [
+                        {
+                            "letter":  "A",
+                            "text":  "Como copio isso rÃ¡pido?\r"
+                        },
+                        {
+                            "letter":  "B",
+                            "text":  "Como ignoro essa parte?\r"
+                        },
+                        {
+                            "letter":  "C",
+                            "text":  "Como isso funciona e como posso aplicar?\r"
+                        },
+                        {
+                            "letter":  "D",
+                            "text":  "Como faÃ§o sem estudar?\r"
+                        },
+                        {
+                            "letter":  "E",
+                            "text":  "Como pulo para o final?"
+                        }
+                    ],
+        "answer":  "C"
+    },
+    {
+        "number":  "5",
+        "question":  "Um Ãºnico estudo pode gerar quais ativos?",
+        "options":  [
+                        {
+                            "letter":  "A",
+                            "text":  "Apenas uma anotaÃ§Ã£o.\r"
+                        },
+                        {
+                            "letter":  "B",
+                            "text":  "Apenas um print.\r"
+                        },
+                        {
+                            "letter":  "C",
+                            "text":  "Aula, PDF, vÃ­deo, agente, artigo e produto.\r"
+                        },
+                        {
+                            "letter":  "D",
+                            "text":  "Apenas um comentÃ¡rio.\r"
+                        },
+                        {
+                            "letter":  "E",
+                            "text":  "Nada reutilizÃ¡vel."
+                        }
+                    ],
+        "answer":  "C"
+    },
+    {
+        "number":  "6",
+        "question":  "Qual erro comum devemos evitar?",
+        "options":  [
+                        {
+                            "letter":  "A",
+                            "text":  "ComeÃ§ar pelo contexto.\r"
+                        },
+                        {
+                            "letter":  "B",
+                            "text":  "Organizar as ideias.\r"
+                        },
+                        {
+                            "letter":  "C",
+                            "text":  "Querer entender tudo de uma vez.\r"
+                        },
+                        {
+                            "letter":  "D",
+                            "text":  "Criar checklist.\r"
+                        },
+                        {
+                            "letter":  "E",
+                            "text":  "Documentar decisÃµes."
+                        }
+                    ],
+        "answer":  "C"
+    },
+    {
+        "number":  "7",
+        "question":  "O que significa transformar conhecimento em patrimÃ´nio?",
+        "options":  [
+                        {
+                            "letter":  "A",
+                            "text":  "Guardar tudo na memÃ³ria.\r"
+                        },
+                        {
+                            "letter":  "B",
+                            "text":  "Registrar, organizar e reutilizar o conhecimento.\r"
+                        },
+                        {
+                            "letter":  "C",
+                            "text":  "Apagar conteÃºdos antigos.\r"
+                        },
+                        {
+                            "letter":  "D",
+                            "text":  "Copiar sem entender.\r"
+                        },
+                        {
+                            "letter":  "E",
+                            "text":  "NÃ£o compartilhar nada."
+                        }
+                    ],
+        "answer":  "B"
+    },
+    {
+        "number":  "8",
+        "question":  "O que a etapa â€œDesmontarâ€ significa?",
+        "options":  [
+                        {
+                            "letter":  "A",
+                            "text":  "Apagar o projeto.\r"
+                        },
+                        {
+                            "letter":  "B",
+                            "text":  "Separar o conteÃºdo em partes menores para entender.\r"
+                        },
+                        {
+                            "letter":  "C",
+                            "text":  "Parar o estudo.\r"
+                        },
+                        {
+                            "letter":  "D",
+                            "text":  "Criar outro repositÃ³rio sem motivo.\r"
+                        },
+                        {
+                            "letter":  "E",
+                            "text":  "Trocar o nome dos arquivos."
+                        }
+                    ],
+        "answer":  "B"
+    },
+    {
+        "number":  "9",
+        "question":  "Por que a engenharia reversa Ã© importante para IA e programaÃ§Ã£o?",
+        "options":  [
+                        {
+                            "letter":  "A",
+                            "text":  "Porque evita estudar.\r"
+                        },
+                        {
+                            "letter":  "B",
+                            "text":  "Porque permite entender sistemas, decisÃµes e aplicaÃ§Ãµes prÃ¡ticas.\r"
+                        },
+                        {
+                            "letter":  "C",
+                            "text":  "Porque substitui todo conhecimento humano.\r"
+                        },
+                        {
+                            "letter":  "D",
+                            "text":  "Porque remove a necessidade de praticar.\r"
+                        },
+                        {
+                            "letter":  "E",
+                            "text":  "Porque serve apenas para copiar cÃ³digo."
+                        }
+                    ],
+        "answer":  "B"
+    },
+    {
+        "number":  "10",
+        "question":  "Qual Ã© a regra central da PredixAI sobre conhecimento?",
+        "options":  [
+                        {
+                            "letter":  "A",
+                            "text":  "Consumir rÃ¡pido e esquecer.\r"
+                        },
+                        {
+                            "letter":  "B",
+                            "text":  "Guardar tudo em prints.\r"
+                        },
+                        {
+                            "letter":  "C",
+                            "text":  "Estudar uma vez, documentar corretamente e reutilizar vÃ¡rias vezes.\r"
+                        },
+                        {
+                            "letter":  "D",
+                            "text":  "Nunca criar documentos.\r"
+                        },
+                        {
+                            "letter":  "E",
+                            "text":  "Usar apenas vÃ­deos curtos."
+                        }
+                    ],
+        "answer":  "C"
+    }
+];
+    const form = document.getElementById("quiz");
+
+    quizData.forEach((item, index) => {
+      const card = document.createElement("section");
+      card.className = "quiz-card";
+
+      let html = "<h3>" + item.number + ". " + item.question + "</h3>";
+
+      item.options.forEach(option => {
+        html += "<label class='option'>";
+        html += "<input type='radio' name='q" + index + "' value='" + option.letter + "'> ";
+        html += option.letter + ") " + option.text;
+        html += "</label>";
+      });
+
+      card.innerHTML = html;
+      form.appendChild(card);
+    });
+
+    function checkQuiz() {
+      let score = 0;
+
+      quizData.forEach((item, index) => {
+        const selected = document.querySelector("input[name='q" + index + "']:checked");
+
+        if (selected && selected.value === item.answer) {
+          score++;
+        }
+      });
+
+      document.getElementById("result").innerText =
+        "Resultado: " + score + " de " + quizData.length + " acertos.";
+    }
+  </script>
+</body>
+</html>
