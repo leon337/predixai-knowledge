@@ -1,106 +1,155 @@
-﻿# PREDIXAI LESSON PACKAGE STANDARD v2
+﻿# PREDIXAI LESSON PACKAGE STANDARD v2.1
 
 ## 1. Objetivo
 
-Toda aula da Academia PredixAI deve ser tratada como uma unidade de produto.
+Toda aula da Academia PredixAI deve virar um pacote completo de aprendizado, publicação e distribuição.
 
-Uma aula aprovada deve gerar automaticamente:
+Uma aula aprovada deve gerar:
 
-- conteúdo educacional;
-- página HTML;
+- pagina HTML da aula;
 - PDF premium;
+- pagina bonita para o PDF;
 - quiz gamificado;
-- pacote de vídeos verticais;
-- pacote de imagens e carrosséis;
-- podcast para Gemini;
-- posts para redes sociais;
+- social pack operacional;
+- prompts para videos verticais;
+- prompts para imagens;
+- prompts para carrosseis;
+- roteiro de podcast para Gemini;
+- paginas bonitas para cada ativo;
+- caixas copiaveis;
 - metadados;
-- links no site.
+- links automaticos no site.
 
 Regra central:
 
-Uma aula entra. Um ecossistema de conteúdo sai.
+Uma aula entra. Um ecossistema de conteudo sai.
 
 ---
 
-## 2. Definição de Aula Aprovada
+## 2. Definicao de Aula Aprovada
 
-Antes de gerar o pacote completo, a aula precisa cumprir:
+Antes de gerar o pacote completo, a aula precisa conter:
 
 - objetivo claro;
-- linguagem em português do Brasil;
-- público-alvo definido;
-- explicação didática;
-- exemplos práticos;
+- publico-alvo definido;
+- linguagem em portugues do Brasil;
+- explicacao didatica;
+- exemplos praticos;
 - checklist;
-- exercício;
+- exercicio;
 - quiz;
 - resumo;
 - CTA principal;
-- revisão conceitual;
-- revisão de clareza;
-- revisão de aplicação prática.
+- revisao conceitual;
+- revisao de clareza;
+- revisao de aplicacao pratica.
 
-Nenhuma automação deve transformar rascunho fraco em pacote final.
+Nenhuma automacao deve transformar rascunho fraco em pacote final.
 
 ---
 
-## 3. Estrutura Obrigatória da Aula
+## 3. Principio de Usabilidade Operacional
+
+Todo ativo gerado deve ser facil de usar.
+
+Nao basta gerar conteudo.
+
+O conteudo deve ser apresentado em paginas bonitas, organizadas e com blocos prontos para copiar e colar.
+
+Todo texto reutilizavel deve aparecer dentro de caixa copiavel.
+
+Exemplos:
+
+- titulo;
+- hashtags;
+- descricao;
+- prompt de video;
+- prompt de imagem;
+- texto de carrossel;
+- prompt de podcast;
+- CTA;
+- legenda;
+- roteiro;
+- chamada para PDF.
+
+---
+
+## 4. Estrutura Obrigatoria da Aula
 
 Toda aula deve conter:
 
-- título;
-- módulo;
-- nível;
+- titulo;
+- modulo;
+- nivel;
 - objetivo;
-- introdução;
-- explicação principal;
+- introducao;
+- explicacao principal;
 - exemplos;
 - analogia simples;
 - checklist;
 - erros comuns;
-- exercício prático;
+- exercicio pratico;
 - resumo executivo;
-- glossário;
+- glossario;
 - quiz;
 - flashcards;
 - produtos derivados;
-- próximo passo.
+- proximo passo.
 
 ---
 
-## 4. PDF Premium
+## 5. PDF Premium
 
-O PDF deve ser produto oficial, não impressão simples.
+O PDF deve ser produto oficial, nao impressao simples.
 
 Requisitos:
 
 - capa profissional;
-- título forte;
+- titulo forte;
 - identidade visual PredixAI;
 - boa hierarquia visual;
-- espaçamento confortável;
+- espacamento confortavel;
 - leitura mobile e desktop;
-- português BR;
+- portugues BR;
 - sem erro de encoding;
 - CTA final;
 - link para site/aula;
-- pronto para ser usado como material gratuito.
+- pronto para distribuicao gratuita.
 
 ---
 
-## 5. Quiz Gamificado
+## 6. Pagina do PDF
+
+Todo PDF deve ter uma pagina propria.
+
+Exemplo:
+
+docs/academy/aula-xx/pdf.html
+
+Essa pagina deve conter:
+
+- titulo do material;
+- descricao curta;
+- beneficios do PDF;
+- botao Baixar PDF;
+- botao Ler Aula;
+- CTA para continuar estudando;
+- visual alinhado ao Design System.
+
+---
+
+## 7. Quiz Gamificado
 
 O quiz deve conter:
 
 - perguntas objetivas;
 - alternativas A-E;
-- botões clicáveis;
+- botoes clicaveis;
 - feedback visual por resposta;
-- pontuação;
 - barra de progresso;
+- pontuacao;
 - mensagem final;
-- CTA para próxima aula;
+- CTA para PDF ou proxima aula;
 - possibilidade futura de medalhas, ranking e certificado.
 
 Objetivo:
@@ -109,37 +158,88 @@ Validar aprendizado e aumentar engajamento.
 
 ---
 
-## 6. Pacote de Vídeo Vertical
+## 8. Social Pack Operacional
 
-Todo vídeo deve seguir formato vertical 9:16.
+O Social Pack nao deve ser apenas um arquivo Markdown.
 
-Obrigatório para YouTube Shorts, Reels e TikTok:
+Ele deve ter uma pagina propria.
 
-- título + hashtags com no máximo 100 caracteres;
-- descrição;
-- hashtags;
-- gancho nos primeiros segundos;
-- roteiro de narração;
-- texto na tela;
-- prompt em linguagem natural;
-- direção visual da cena;
-- duração estimada;
-- CTA final.
+Exemplo:
 
-O conteúdo deve seguir os princípios do canal Viralizou BR:
+docs/academy/aula-xx/social-pack.html
 
-- conflito inicial;
-- curiosidade aberta;
-- progressão visual;
-- frases curtas;
-- retenção;
-- fechamento com próximo passo.
+Essa pagina deve organizar conteudos por plataforma:
+
+- YouTube Shorts;
+- Instagram Reels;
+- TikTok;
+- LinkedIn;
+- X;
+- Carrossel;
+- Podcast;
+- CTA;
+- Prompts.
+
+Cada bloco deve ter:
+
+- titulo;
+- objetivo;
+- conteudo em caixa copiavel;
+- botao Copiar.
 
 ---
 
-## 7. Pacote de Imagens e Carrosséis
+## 9. Pacote de Video Vertical
 
-Toda aula deve gerar prompts para imagens e carrosséis.
+Todo video deve seguir formato vertical 9:16.
+
+Obrigatorio para YouTube Shorts, Reels e TikTok:
+
+- titulo + hashtags com no maximo 100 caracteres;
+- descricao;
+- hashtags;
+- gancho nos primeiros segundos;
+- roteiro de narracao;
+- texto na tela;
+- prompt em linguagem natural;
+- direcao visual da cena;
+- duracao estimada;
+- CTA final.
+
+O conteudo deve seguir principios do canal Viralizou BR:
+
+- conflito inicial;
+- curiosidade aberta;
+- progressao visual;
+- frases curtas;
+- retencao;
+- fechamento com proximo passo.
+
+---
+
+## 10. Prompts para YouTube Creator
+
+Todo prompt de video deve ser escrito em linguagem natural.
+
+Formato obrigatorio:
+
+- video vertical 9:16;
+- cena clara;
+- personagem ou objeto quando necessario;
+- estilo visual;
+- acao principal;
+- texto na tela;
+- tom emocional;
+- duracao aproximada;
+- objetivo do video.
+
+O prompt deve ser pronto para copiar e colar no YouTube Creator.
+
+---
+
+## 11. Pacote de Imagens e Carrosseis
+
+Toda aula deve gerar prompts para imagens e carrosseis.
 
 Cada carrossel deve conter:
 
@@ -156,36 +256,36 @@ As imagens devem poder ser geradas no ChatGPT, Nano Banana ou outra IA visual.
 
 ---
 
-## 8. Podcast para Gemini
+## 12. Podcast para Gemini
 
 Cada aula deve gerar um roteiro de podcast.
 
-Obrigatório:
+Obrigatorio:
 
-- título do episódio;
-- descrição;
+- titulo do episodio;
+- descricao;
 - prompt para Gemini;
 - tom dos apresentadores;
 - abertura;
 - desenvolvimento em blocos;
-- exemplo prático;
+- exemplo pratico;
 - resumo;
 - CTA;
 - encerramento;
-- duração estimada.
+- duracao estimada.
 
-O podcast deve soar natural, educativo e acessível.
+O podcast deve soar natural, educativo e acessivel.
 
 ---
 
-## 9. Pacote por Plataforma
+## 13. Pacote por Plataforma
 
-Cada aula deve gerar conteúdo para:
+Cada aula deve gerar conteudo para:
 
 ### YouTube Shorts
 
-- título + hashtags até 100 caracteres;
-- descrição;
+- titulo + hashtags ate 100 caracteres;
+- descricao;
 - hashtags;
 - roteiro curto;
 - prompt vertical para YouTube Creator.
@@ -200,7 +300,7 @@ Cada aula deve gerar conteúdo para:
 
 ### TikTok
 
-- roteiro rápido;
+- roteiro rapido;
 - gancho forte;
 - linguagem direta;
 - CTA para seguir ou comentar.
@@ -208,7 +308,7 @@ Cada aula deve gerar conteúdo para:
 ### LinkedIn
 
 - post educativo;
-- reflexão estratégica;
+- reflexao estrategica;
 - autoridade profissional;
 - link da aula.
 
@@ -223,7 +323,7 @@ Cada aula deve gerar conteúdo para:
 
 ---
 
-## 10. CTA e Lead
+## 14. CTA e Lead
 
 Toda aula deve ter um CTA principal.
 
@@ -241,30 +341,30 @@ Toda aula deve ter uma promessa clara de valor.
 
 Exemplo:
 
-Baixe o PDF gratuito e aprenda a transformar qualquer conteúdo em conhecimento reutilizável.
+Baixe o PDF gratuito e aprenda a transformar qualquer conteudo em conhecimento reutilizavel.
 
 ---
 
-## 11. Metadados
+## 15. Metadados
 
 Cada aula deve ter meta.json com:
 
 - slug;
-- título;
-- módulo;
-- nível;
+- titulo;
+- modulo;
+- nivel;
 - status;
-- versão;
+- versao;
 - data;
 - tags;
-- público-alvo;
+- publico-alvo;
 - CTA principal;
 - produtos gerados;
 - links publicados.
 
 ---
 
-## 12. Estrutura de Pastas
+## 16. Estrutura de Pastas
 
 Para cada aula:
 
@@ -274,9 +374,13 @@ academy/modulo-xx/nome-do-modulo/aula-xx/
 docs/academy/aula-xx/
 - index.html
 - quiz.html
+- pdf.html
+- social-pack.html
+- podcast.html
+- video-prompts.html
+- image-prompts.html
+- carousel-prompts.html
 - aula-xx.md
-- social-pack.md
-- podcast.md
 - meta.json
 
 docs/downloads/
@@ -293,31 +397,35 @@ media/prompts/
 
 ---
 
-## 13. Validação Antes da Publicação
+## 17. Validacao Antes da Publicacao
 
 Antes do commit e push, validar:
 
 - HTML da aula existe;
+- pagina do PDF existe;
 - PDF foi gerado;
-- quiz tem perguntas;
+- quiz existe;
 - social pack existe;
 - podcast existe;
-- prompts de vídeo existem;
+- prompts de video existem;
 - prompts de imagem existem;
+- prompts de carrossel existem;
 - meta.json existe;
 - link aparece na Academy;
-- não há erro de encoding;
+- caixas copiaveis existem;
+- botoes copiar funcionam;
+- nao ha erro de encoding;
 - git status foi conferido.
 
 ---
 
-## 14. Automação
+## 18. Automacao
 
 Nenhuma aula deve ser publicada manualmente arquivo por arquivo.
 
 Fluxo oficial:
 
-Aula aprovada -> script único -> pacote completo -> commit -> push.
+Aula aprovada -> script unico -> pacote completo -> commit -> push.
 
 Script oficial:
 
@@ -325,22 +433,22 @@ scripts/build_lesson_full.ps1
 
 ---
 
-## 15. OpenClaw
+## 19. OpenClaw
 
-O OpenClaw poderá ser usado futuramente para executar o script oficial.
+O OpenClaw podera ser usado futuramente para executar o script oficial.
 
 Regra:
 
-O OpenClaw não deve improvisar estrutura.
+O OpenClaw nao deve improvisar estrutura.
 
 Ele deve executar comandos aprovados e scripts oficiais.
 
 ---
 
-## 16. Regra Máxima
+## 20. Regra Maxima
 
-Aula não é apenas conteúdo.
+Aula nao e apenas conteudo.
 
-Aula é produto educacional, isca digital, base de autoridade, material de distribuição e combustível para agentes.
+Aula e produto educacional, isca digital, base de autoridade, material de distribuicao e combustivel para agentes.
 
 Cada aula deve ensinar, engajar, distribuir, captar e fortalecer a PredixAI.
