@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
@@ -22,10 +22,11 @@
     <a href="quiz.html">Quiz</a>
     <a href="pdf.html">PDF</a>
     <a href="social-pack.html">Social Pack</a>
+    <a href="podcast.html">Podcast</a>
   </nav>
 
   <main class="copy-page">
-    <section class="copy-hero">
+<section class="copy-hero">
   <h1>Prompts de Imagem da Aula 01</h1>
   <p>Prompts para gerar capas, posts e imagens estáticas em IA visual.</p>
 </section>
@@ -40,7 +41,6 @@
     <button class="copy-btn" data-copy="img-01" onclick="copyText('img-01')">Copiar</button>
   </div>
 </section>
-
 <section class="copy-card">
   <span class="copy-label">Imagem</span>
   <h2>Post de impacto</h2>
@@ -60,6 +60,7 @@
   <script>
     function copyText(id) {
       const field = document.getElementById(id);
+      field.focus();
       field.select();
       field.setSelectionRange(0, 999999);
       navigator.clipboard.writeText(field.value);
@@ -72,7 +73,7 @@
       setTimeout(() => {
         button.innerText = original;
         button.classList.remove("success");
-      }, 1400);
+      }, 1300);
     }
   </script>
 </body>

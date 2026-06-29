@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
@@ -22,10 +22,11 @@
     <a href="quiz.html">Quiz</a>
     <a href="pdf.html">PDF</a>
     <a href="social-pack.html">Social Pack</a>
+    <a href="podcast.html">Podcast</a>
   </nav>
 
   <main class="copy-page">
-    <section class="copy-hero">
+<section class="copy-hero">
   <h1>Podcast Gemini da Aula 01</h1>
   <p>Roteiro e prompt prontos para transformar a aula em episódio de áudio.</p>
 </section>
@@ -40,7 +41,6 @@
     <button class="copy-btn" data-copy="pod-title" onclick="copyText('pod-title')">Copiar</button>
   </div>
 </section>
-
 <section class="copy-card">
   <span class="copy-label">Podcast</span>
   <h2>Descrição do episódio</h2>
@@ -50,7 +50,6 @@
     <button class="copy-btn" data-copy="pod-desc" onclick="copyText('pod-desc')">Copiar</button>
   </div>
 </section>
-
 <section class="copy-card">
   <span class="copy-label">Gemini</span>
   <h2>Prompt para Gemini</h2>
@@ -70,6 +69,7 @@
   <script>
     function copyText(id) {
       const field = document.getElementById(id);
+      field.focus();
       field.select();
       field.setSelectionRange(0, 999999);
       navigator.clipboard.writeText(field.value);
@@ -82,7 +82,7 @@
       setTimeout(() => {
         button.innerText = original;
         button.classList.remove("success");
-      }, 1400);
+      }, 1300);
     }
   </script>
 </body>

@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
@@ -22,10 +22,11 @@
     <a href="quiz.html">Quiz</a>
     <a href="pdf.html">PDF</a>
     <a href="social-pack.html">Social Pack</a>
+    <a href="podcast.html">Podcast</a>
   </nav>
 
   <main class="copy-page">
-    <section class="copy-hero">
+<section class="copy-hero">
   <h1>Carrossel da Aula 01</h1>
   <p>Roteiro e prompts para criar carrossel educativo em redes sociais.</p>
 </section>
@@ -35,12 +36,11 @@
   <span class="copy-label">Carrossel</span>
   <h2>Título + hashtags até 100 caracteres</h2>
   <p>Use como título do post.</p>
-  <textarea class="copy-box" id="car-title" readonly>Copiar n&#227;o &#233; aprender. Entender &#233; construir. #IA #Aprendizado #PredixAI</textarea>
+  <textarea class="copy-box" id="car-title" readonly>Copiar n&#227;o &#233; aprender. Entender &#233; construir. #IA #PredixAI</textarea>
   <div class="copy-actions">
     <button class="copy-btn" data-copy="car-title" onclick="copyText('car-title')">Copiar</button>
   </div>
 </section>
-
 <section class="copy-card">
   <span class="copy-label">Carrossel</span>
   <h2>Texto dos slides</h2>
@@ -56,7 +56,6 @@ Slide 7: PredixAI: conhecimento que vira produto.</textarea>
     <button class="copy-btn" data-copy="car-slides" onclick="copyText('car-slides')">Copiar</button>
   </div>
 </section>
-
 <section class="copy-card">
   <span class="copy-label">Carrossel</span>
   <h2>Prompt visual</h2>
@@ -76,6 +75,7 @@ Slide 7: PredixAI: conhecimento que vira produto.</textarea>
   <script>
     function copyText(id) {
       const field = document.getElementById(id);
+      field.focus();
       field.select();
       field.setSelectionRange(0, 999999);
       navigator.clipboard.writeText(field.value);
@@ -88,7 +88,7 @@ Slide 7: PredixAI: conhecimento que vira produto.</textarea>
       setTimeout(() => {
         button.innerText = original;
         button.classList.remove("success");
-      }, 1400);
+      }, 1300);
     }
   </script>
 </body>

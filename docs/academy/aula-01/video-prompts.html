@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
@@ -22,10 +22,11 @@
     <a href="quiz.html">Quiz</a>
     <a href="pdf.html">PDF</a>
     <a href="social-pack.html">Social Pack</a>
+    <a href="podcast.html">Podcast</a>
   </nav>
 
   <main class="copy-page">
-    <section class="copy-hero">
+<section class="copy-hero">
   <h1>Prompts de Vídeo da Aula 01</h1>
   <p>Prompts verticais em português BR para YouTube Creator, Shorts, Reels e TikTok.</p>
 </section>
@@ -35,12 +36,11 @@
   <span class="copy-label">Vídeo 01</span>
   <h2>Gancho: copiar não é aprender</h2>
   <p>Prompt vertical 9:16.</p>
-  <textarea class="copy-box" id="video-01" readonly>Crie um v&#237;deo vertical 9:16 em portugu&#234;s do Brasil. Mostre uma pessoa copiando algo da internet sem entender, com express&#227;o confusa. Texto na tela: &#39;Copiar n&#227;o &#233; aprender&#39;. Em seguida, mostre a pessoa analisando a estrutura, separando problema, l&#243;gica e solu&#231;&#227;o em um quadro. Texto na tela: &#39;Aprender &#233; entender a l&#243;gica&#39;. Estilo moderno, educativo, com ritmo r&#225;pido, ilumina&#231;&#227;o cinematogr&#225;fica e sensa&#231;&#227;o de descoberta. Final: &#39;Engenharia Reversa de Conhecimento&#39;. Dura&#231;&#227;o: 20 segundos.</textarea>
+  <textarea class="copy-box" id="video-01" readonly>Crie um v&#237;deo vertical 9:16, estilo educativo e cinematogr&#225;fico, em portugu&#234;s do Brasil. A cena come&#231;a com uma pessoa olhando para uma tela cheia de c&#243;digos e anota&#231;&#245;es, confusa. Texto na tela: &#39;Copiar n&#227;o &#233; aprender&#39;. Depois a cena muda para a mesma pessoa organizando ideias em um quadro, conectando problema, l&#243;gica e solu&#231;&#227;o. Texto na tela: &#39;Engenharia reversa &#233; entender a l&#243;gica&#39;. O v&#237;deo deve ter ritmo r&#225;pido, visual moderno, clima de descoberta e final com a frase: &#39;Transforme conte&#250;do em conhecimento reutiliz&#225;vel&#39;. Dura&#231;&#227;o aproximada: 20 segundos.</textarea>
   <div class="copy-actions">
     <button class="copy-btn" data-copy="video-01" onclick="copyText('video-01')">Copiar</button>
   </div>
 </section>
-
 <section class="copy-card">
   <span class="copy-label">Vídeo 02</span>
   <h2>Gancho: você consome ou transforma?</h2>
@@ -60,6 +60,7 @@
   <script>
     function copyText(id) {
       const field = document.getElementById(id);
+      field.focus();
       field.select();
       field.setSelectionRange(0, 999999);
       navigator.clipboard.writeText(field.value);
@@ -72,7 +73,7 @@
       setTimeout(() => {
         button.innerText = original;
         button.classList.remove("success");
-      }, 1400);
+      }, 1300);
     }
   </script>
 </body>

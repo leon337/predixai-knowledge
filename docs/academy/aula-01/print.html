@@ -1,25 +1,67 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
   <title>Aula 01 - Engenharia Reversa de Conhecimento</title>
   <style>
+    @page {
+      size: A4;
+      margin: 18mm 16mm;
+    }
+
     body {
-      font-family: Arial, sans-serif;
+      font-family: Arial, Helvetica, sans-serif;
       color: #111827;
       line-height: 1.6;
-      max-width: 900px;
-      margin: 40px auto;
-      padding: 0 24px;
+      margin: 0;
+      padding: 0;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
+    .cover {
+      background: linear-gradient(135deg, #0F172A, #1E293B);
+      color: white;
+      border-radius: 18px;
+      padding: 32px;
+      margin-bottom: 28px;
+    }
+
+    .cover h1 {
+      font-size: 32px;
+      line-height: 1.12;
+      margin: 0 0 10px;
+      color: white;
+    }
+
+    .cover p {
+      color: #E2E8F0;
+      font-size: 15px;
+      margin: 0;
     }
 
     h1, h2, h3 {
       color: #0F172A;
+      page-break-after: avoid;
     }
 
     h1 {
+      font-size: 26px;
       border-bottom: 3px solid #2563EB;
-      padding-bottom: 12px;
+      padding-bottom: 8px;
+    }
+
+    h2 {
+      font-size: 21px;
+      margin-top: 26px;
+    }
+
+    h3 {
+      font-size: 17px;
+    }
+
+    p, li {
+      font-size: 13.5px;
     }
 
     blockquote {
@@ -32,36 +74,51 @@
     hr {
       border: 0;
       border-top: 1px solid #CBD5E1;
-      margin: 28px 0;
+      margin: 24px 0;
     }
 
-    li {
-      margin-bottom: 6px;
+    .footer-note {
+      margin-top: 38px;
+      padding: 16px;
+      border-radius: 14px;
+      background: #EFF6FF;
+      color: #1E3A8A;
+      font-weight: bold;
     }
   </style>
 </head>
+
 <body>
+  <section class="cover">
+    <h1>Aula 01 - Engenharia Reversa de Conhecimento</h1>
+    <p>Módulo 01 - Mentalidade do Arquiteto · Academia PredixAI · Material oficial em português do Brasil</p>
+  </section>
+
 <h1>Aula 01 — O que &#233; Engenharia Reversa de Conhecimento</h1>
 <h2>Identifica&#231;&#227;o</h2>
-<p>* Programa: Academia PredixAI</p>
-<p>* M&#243;dulo: 01 — Mentalidade do Arquiteto</p>
-<p>* Aula: 01</p>
-<p>* Tema: Engenharia Reversa de Conhecimento</p>
-<p>* N&#237;vel: Iniciante</p>
-<p>* Status: Rascunho oficial v1.0</p>
+<ul>
+<li>Programa: Academia PredixAI</li>
+<li>M&#243;dulo: 01 — Mentalidade do Arquiteto</li>
+<li>Aula: 01</li>
+<li>Tema: Engenharia Reversa de Conhecimento</li>
+<li>N&#237;vel: Iniciante</li>
+<li>Status: Rascunho oficial v1.0</li>
+</ul>
 <hr />
 <h2>Painel de Progresso</h2>
 <p>Projeto: PredixAI Knowledge Hub</p>
 <p>Fase atual: Produ&#231;&#227;o da primeira aula</p>
 <p>Etapa: Aula 01 em constru&#231;&#227;o</p>
 <p>Progresso:</p>
-<p>* [x] Funda&#231;&#227;o criada</p>
-<p>* [x] Site publicado</p>
-<p>* [x] Estrutura da Academy iniciada</p>
-<p>* [ ] Aula 01 escrita</p>
-<p>* [ ] Quiz criado</p>
-<p>* [ ] PDF gerado</p>
-<p>* [ ] P&#225;gina HTML publicada</p>
+<ul>
+<li>[x] Funda&#231;&#227;o criada</li>
+<li>[x] Site publicado</li>
+<li>[x] Estrutura da Academy iniciada</li>
+<li>[ ] Aula 01 escrita</li>
+<li>[ ] Quiz criado</li>
+<li>[ ] PDF gerado</li>
+<li>[ ] P&#225;gina HTML publicada</li>
+</ul>
 <hr />
 <h2>Objetivo da Aula</h2>
 <p>Ao final desta aula, voc&#234; deve entender:</p>
@@ -76,14 +133,16 @@
 <p>N&#227;o &#233; copiar.</p>
 <p>&#201; entender.</p>
 <p>Quando estudamos um reposit&#243;rio, um v&#237;deo t&#233;cnico, uma ferramenta ou um artigo, n&#227;o queremos apenas consumir informa&#231;&#227;o. Queremos descobrir:</p>
-<p>* qual problema aquilo resolve;</p>
-<p>* por que foi criado;</p>
-<p>* como foi organizado;</p>
-<p>* quais decis&#245;es foram tomadas;</p>
-<p>* quais tecnologias foram usadas;</p>
-<p>* o que podemos aprender;</p>
-<p>* o que podemos reutilizar;</p>
-<p>* o que pode virar aula, produto ou agente.</p>
+<ul>
+<li>qual problema aquilo resolve;</li>
+<li>por que foi criado;</li>
+<li>como foi organizado;</li>
+<li>quais decis&#245;es foram tomadas;</li>
+<li>quais tecnologias foram usadas;</li>
+<li>o que podemos aprender;</li>
+<li>o que podemos reutilizar;</li>
+<li>o que pode virar aula, produto ou agente.</li>
+</ul>
 <p>Na PredixAI, conhecimento n&#227;o pode ficar solto. Ele precisa virar patrim&#244;nio.</p>
 <hr />
 <h2>2. Defini&#231;&#227;o Simples</h2>
@@ -118,44 +177,52 @@
 <h3>Etapa 1 — Identificar</h3>
 <p>Primeiro entendemos o que estamos estudando.</p>
 <p>Perguntas:</p>
-<p>* O que &#233; isso?</p>
-<p>* Quem criou?</p>
-<p>* Para que serve?</p>
-<p>* Qual problema resolve?</p>
+<ul>
+<li>O que &#233; isso?</li>
+<li>Quem criou?</li>
+<li>Para que serve?</li>
+<li>Qual problema resolve?</li>
+</ul>
 <hr />
 <h3>Etapa 2 — Desmontar</h3>
 <p>Depois dividimos o conte&#250;do em partes menores.</p>
 <p>Exemplo em um reposit&#243;rio:</p>
-<p>* README</p>
-<p>* pastas</p>
-<p>* arquivos principais</p>
-<p>* depend&#234;ncias</p>
-<p>* comandos</p>
-<p>* exemplos</p>
-<p>* testes</p>
-<p>* documenta&#231;&#227;o</p>
+<ul>
+<li>README</li>
+<li>pastas</li>
+<li>arquivos principais</li>
+<li>depend&#234;ncias</li>
+<li>comandos</li>
+<li>exemplos</li>
+<li>testes</li>
+<li>documenta&#231;&#227;o</li>
+</ul>
 <hr />
 <h3>Etapa 3 — Interpretar</h3>
 <p>Agora tentamos entender a l&#243;gica por tr&#225;s.</p>
 <p>Perguntas:</p>
-<p>* Por que foi feito assim?</p>
-<p>* Havia outra forma?</p>
-<p>* Essa decis&#227;o &#233; boa?</p>
-<p>* Quais riscos existem?</p>
-<p>* O que parece importante?</p>
+<ul>
+<li>Por que foi feito assim?</li>
+<li>Havia outra forma?</li>
+<li>Essa decis&#227;o &#233; boa?</li>
+<li>Quais riscos existem?</li>
+<li>O que parece importante?</li>
+</ul>
 <hr />
 <h3>Etapa 4 — Reorganizar</h3>
 <p>Depois transformamos a an&#225;lise em conhecimento estruturado.</p>
 <p>Pode virar:</p>
-<p>* resumo;</p>
-<p>* checklist;</p>
-<p>* aula;</p>
-<p>* mapa mental;</p>
-<p>* artigo;</p>
-<p>* PDF;</p>
-<p>* prompt;</p>
-<p>* agente;</p>
-<p>* ferramenta.</p>
+<ul>
+<li>resumo;</li>
+<li>checklist;</li>
+<li>aula;</li>
+<li>mapa mental;</li>
+<li>artigo;</li>
+<li>PDF;</li>
+<li>prompt;</li>
+<li>agente;</li>
+<li>ferramenta.</li>
+</ul>
 <hr />
 <h3>Etapa 5 — Aplicar</h3>
 <p>Conhecimento s&#243; tem valor quando vira a&#231;&#227;o.</p>
@@ -168,14 +235,16 @@
 <p>A PredixAI faz diferente.</p>
 <p>N&#243;s transformamos conte&#250;do em sistema.</p>
 <p>Um &#250;nico estudo pode gerar:</p>
-<p>* uma aula;</p>
-<p>* um PDF;</p>
-<p>* um v&#237;deo;</p>
-<p>* um post;</p>
-<p>* um agente;</p>
-<p>* uma automa&#231;&#227;o;</p>
-<p>* uma melhoria no produto;</p>
-<p>* uma nova ideia de neg&#243;cio.</p>
+<ul>
+<li>uma aula;</li>
+<li>um PDF;</li>
+<li>um v&#237;deo;</li>
+<li>um post;</li>
+<li>um agente;</li>
+<li>uma automa&#231;&#227;o;</li>
+<li>uma melhoria no produto;</li>
+<li>uma nova ideia de neg&#243;cio.</li>
+</ul>
 <p>Isso &#233; multiplica&#231;&#227;o de conhecimento.</p>
 <hr />
 <h2>6. Aplica&#231;&#227;o Real na PredixAI</h2>
@@ -194,16 +263,18 @@
 <hr />
 <h2>7. Checklist de Engenharia Reversa de Conhecimento</h2>
 <p>Sempre que estudar algo, use este checklist:</p>
-<p>* [ ] Entendi o objetivo?</p>
-<p>* [ ] Identifiquei o problema que resolve?</p>
-<p>* [ ] Analisei a estrutura?</p>
-<p>* [ ] Separei conceitos principais?</p>
-<p>* [ ] Identifiquei decis&#245;es importantes?</p>
-<p>* [ ] Avaliei ferramentas usadas?</p>
-<p>* [ ] Listei pontos fortes?</p>
-<p>* [ ] Listei limita&#231;&#245;es?</p>
-<p>* [ ] Pensei como aplicar na PredixAI?</p>
-<p>* [ ] Transformei em material reutiliz&#225;vel?</p>
+<ul>
+<li>[ ] Entendi o objetivo?</li>
+<li>[ ] Identifiquei o problema que resolve?</li>
+<li>[ ] Analisei a estrutura?</li>
+<li>[ ] Separei conceitos principais?</li>
+<li>[ ] Identifiquei decis&#245;es importantes?</li>
+<li>[ ] Avaliei ferramentas usadas?</li>
+<li>[ ] Listei pontos fortes?</li>
+<li>[ ] Listei limita&#231;&#245;es?</li>
+<li>[ ] Pensei como aplicar na PredixAI?</li>
+<li>[ ] Transformei em material reutiliz&#225;vel?</li>
+</ul>
 <hr />
 <h2>8. Erro Comum</h2>
 <p>O erro mais comum &#233; querer entender tudo de uma vez.</p>
@@ -219,12 +290,14 @@
 <h2>9. Analogia Simples</h2>
 <p>Estudar sem engenharia reversa &#233; como entrar em uma oficina cheia de pe&#231;as jogadas.</p>
 <p>Estudar com engenharia reversa &#233; separar:</p>
-<p>* motor;</p>
-<p>* parafusos;</p>
-<p>* ferramentas;</p>
-<p>* manual;</p>
-<p>* fun&#231;&#227;o de cada pe&#231;a;</p>
-<p>* ordem de montagem.</p>
+<ul>
+<li>motor;</li>
+<li>parafusos;</li>
+<li>ferramentas;</li>
+<li>manual;</li>
+<li>fun&#231;&#227;o de cada pe&#231;a;</li>
+<li>ordem de montagem.</li>
+</ul>
 <p>A pe&#231;a sozinha confunde.</p>
 <p>A pe&#231;a dentro do sistema ensina.</p>
 <hr />
@@ -377,18 +450,24 @@
 <hr />
 <h2>Produtos Derivados Desta Aula</h2>
 <p>Esta aula pode gerar:</p>
-<p>* P&#225;gina HTML da aula.</p>
-<p>* PDF gratuito.</p>
-<p>* Quiz interativo.</p>
-<p>* Carrossel para Instagram.</p>
-<p>* Roteiro de short.</p>
-<p>* Artigo de blog.</p>
-<p>* Base para agente educacional.</p>
-<p>* Checklist de estudo.</p>
+<ul>
+<li>P&#225;gina HTML da aula.</li>
+<li>PDF gratuito.</li>
+<li>Quiz interativo.</li>
+<li>Carrossel para Instagram.</li>
+<li>Roteiro de short.</li>
+<li>Artigo de blog.</li>
+<li>Base para agente educacional.</li>
+<li>Checklist de estudo.</li>
+</ul>
 <hr />
 <h2>Pr&#243;ximo Passo</h2>
 <p>A pr&#243;xima aula ser&#225;:</p>
 <p>Aula 02 — Como um arquiteto estuda um reposit&#243;rio.</p>
 
+
+  <section class="footer-note">
+    Continue estudando no PredixAI Knowledge Hub. Aula, quiz e materiais de publicação disponíveis na plataforma.
+  </section>
 </body>
 </html>

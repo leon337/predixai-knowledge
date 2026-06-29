@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
@@ -6,50 +6,118 @@
   <title>Quiz - Aula 01 - Engenharia Reversa de Conhecimento</title>
   <link rel="stylesheet" href="../../styles.css" />
   <style>
+    .quiz-shell {
+      max-width: 920px;
+      margin: 0 auto;
+    }
+
+    .progress-wrap {
+      background: #E2E8F0;
+      border-radius: 999px;
+      overflow: hidden;
+      height: 16px;
+      margin: 20px 0;
+    }
+
+    .progress-bar {
+      width: 0%;
+      height: 100%;
+      background: #2563EB;
+      transition: width 0.25s ease;
+    }
+
     .quiz-card {
       background: #FFFFFF;
       border: 1px solid #CBD5E1;
-      border-radius: 18px;
-      padding: 22px;
-      margin-bottom: 16px;
+      border-radius: 20px;
+      padding: 24px;
       box-shadow: 0 8px 20px rgba(15, 23, 42, 0.08);
     }
 
-    .option {
-      display: block;
-      margin: 10px 0;
-      padding: 12px;
+    .option-btn {
+      width: 100%;
       border: 1px solid #CBD5E1;
-      border-radius: 12px;
+      background: #F8FAFC;
+      color: #0F172A;
+      border-radius: 14px;
+      padding: 14px;
+      text-align: left;
+      margin: 8px 0;
       cursor: pointer;
+      font-size: 1rem;
+      font-weight: 700;
     }
 
-    .result {
-      font-weight: bold;
+    .option-btn.correct {
+      background: #DCFCE7;
+      border-color: #22C55E;
+      color: #166534;
+    }
+
+    .option-btn.wrong {
+      background: #FEE2E2;
+      border-color: #EF4444;
+      color: #991B1B;
+    }
+
+    .feedback {
+      margin-top: 16px;
+      font-weight: 800;
+      font-size: 1.1rem;
+    }
+
+    .score-box {
+      background: #ECFDF5;
+      border: 1px solid #A7F3D0;
+      color: #065F46;
+      border-radius: 20px;
+      padding: 22px;
       margin-top: 18px;
-      font-size: 20px;
-      color: #0F172A;
+      display: none;
     }
   </style>
 </head>
 
 <body>
   <header>
-    <div class="badge">Quiz</div>
+    <div class="badge">Quiz Gamificado</div>
     <h1>Aula 01 - Engenharia Reversa de Conhecimento</h1>
-    <p>Teste de aprendizagem da Academia PredixAI</p>
+    <p>Teste seu aprendizado e avance na Academia PredixAI.</p>
   </header>
 
   <nav>
     <a href="../../index.html">Home</a>
     <a href="../../academy.html">Academy</a>
     <a href="index.html">Voltar para aula</a>
+    <a href="pdf.html">PDF</a>
+    <a href="social-pack.html">Social Pack</a>
   </nav>
 
-  <main>
-    <form id="quiz"></form>
-    <button class="button" onclick="checkQuiz()">Corrigir Quiz</button>
-    <div class="result" id="result"></div>
+  <main class="quiz-shell">
+    <section class="panel">
+      <h2 id="stepTitle">Questão 1</h2>
+      <div class="progress-wrap">
+        <div class="progress-bar" id="progressBar"></div>
+      </div>
+    </section>
+
+    <section class="quiz-card" id="quizCard">
+      <h2 id="questionText"></h2>
+      <div id="options"></div>
+      <div class="feedback" id="feedback"></div>
+      <div style="margin-top: 16px;">
+        <button class="button" id="nextBtn" onclick="nextQuestion()" style="display:none;">Próxima</button>
+      </div>
+    </section>
+
+    <section class="score-box" id="scoreBox">
+      <h2>Resultado final</h2>
+      <p id="scoreText"></p>
+      <div style="margin-top: 16px;">
+        <a class="button" href="pdf.html">Revisar PDF</a>
+        <a class="button" href="index.html">Voltar para aula</a>
+      </div>
+    </section>
   </main>
 
   <footer>
@@ -80,7 +148,7 @@
                         },
                         {
                             "letter":  "E",
-                            "text":  "Decorar comandos."
+                            "text":  "Decorar comandos.\r"
                         }
                     ],
         "answer":  "B"
@@ -107,7 +175,7 @@
                         },
                         {
                             "letter":  "E",
-                            "text":  "Rodar qualquer comando."
+                            "text":  "Rodar qualquer comando.\r"
                         }
                     ],
         "answer":  "C"
@@ -134,7 +202,7 @@
                         },
                         {
                             "letter":  "E",
-                            "text":  "Depende do horário."
+                            "text":  "Depende do horário.\r"
                         }
                     ],
         "answer":  "D"
@@ -161,7 +229,7 @@
                         },
                         {
                             "letter":  "E",
-                            "text":  "Como pulo para o final?"
+                            "text":  "Como pulo para o final?\r"
                         }
                     ],
         "answer":  "C"
@@ -188,7 +256,7 @@
                         },
                         {
                             "letter":  "E",
-                            "text":  "Nada reutilizável."
+                            "text":  "Nada reutilizável.\r"
                         }
                     ],
         "answer":  "C"
@@ -215,7 +283,7 @@
                         },
                         {
                             "letter":  "E",
-                            "text":  "Documentar decisões."
+                            "text":  "Documentar decisões.\r"
                         }
                     ],
         "answer":  "C"
@@ -242,7 +310,7 @@
                         },
                         {
                             "letter":  "E",
-                            "text":  "Não compartilhar nada."
+                            "text":  "Não compartilhar nada.\r"
                         }
                     ],
         "answer":  "B"
@@ -269,7 +337,7 @@
                         },
                         {
                             "letter":  "E",
-                            "text":  "Trocar o nome dos arquivos."
+                            "text":  "Trocar o nome dos arquivos.\r"
                         }
                     ],
         "answer":  "B"
@@ -296,7 +364,7 @@
                         },
                         {
                             "letter":  "E",
-                            "text":  "Porque serve apenas para copiar código."
+                            "text":  "Porque serve apenas para copiar código.\r"
                         }
                     ],
         "answer":  "B"
@@ -323,45 +391,85 @@
                         },
                         {
                             "letter":  "E",
-                            "text":  "Usar apenas vídeos curtos."
+                            "text":  "Usar apenas vídeos curtos.\r"
                         }
                     ],
         "answer":  "C"
     }
 ];
-    const form = document.getElementById("quiz");
+    let current = 0;
+    let score = 0;
+    let answered = false;
 
-    quizData.forEach((item, index) => {
-      const card = document.createElement("section");
-      card.className = "quiz-card";
+    function renderQuestion() {
+      answered = false;
+      document.getElementById("feedback").innerText = "";
+      document.getElementById("nextBtn").style.display = "none";
 
-      let html = "<h3>" + item.number + ". " + item.question + "</h3>";
+      const item = quizData[current];
+      document.getElementById("stepTitle").innerText = "Questão " + (current + 1) + " de " + quizData.length;
+      document.getElementById("questionText").innerText = item.question;
+      document.getElementById("progressBar").style.width = ((current) / quizData.length * 100) + "%";
+
+      const options = document.getElementById("options");
+      options.innerHTML = "";
 
       item.options.forEach(option => {
-        html += "<label class='option'>";
-        html += "<input type='radio' name='q" + index + "' value='" + option.letter + "'> ";
-        html += option.letter + ") " + option.text;
-        html += "</label>";
+        const btn = document.createElement("button");
+        btn.className = "option-btn";
+        btn.innerText = option.letter + ") " + option.text;
+        btn.onclick = () => answer(option.letter, btn);
+        options.appendChild(btn);
       });
+    }
 
-      card.innerHTML = html;
-      form.appendChild(card);
-    });
+    function answer(letter, button) {
+      if (answered) return;
 
-    function checkQuiz() {
-      let score = 0;
+      answered = true;
+      const item = quizData[current];
+      const allButtons = document.querySelectorAll(".option-btn");
 
-      quizData.forEach((item, index) => {
-        const selected = document.querySelector("input[name='q" + index + "']:checked");
-
-        if (selected && selected.value === item.answer) {
-          score++;
+      allButtons.forEach(btn => {
+        if (btn.innerText.startsWith(item.answer + ")")) {
+          btn.classList.add("correct");
         }
       });
 
-      document.getElementById("result").innerText =
-        "Resultado: " + score + " de " + quizData.length + " acertos.";
+      if (letter === item.answer) {
+        score++;
+        button.classList.add("correct");
+        document.getElementById("feedback").innerText = "Correto. Você entendeu a lógica.";
+      } else {
+        button.classList.add("wrong");
+        document.getElementById("feedback").innerText = "Ainda não. Revise esse ponto na aula.";
+      }
+
+      document.getElementById("nextBtn").style.display = "inline-flex";
     }
+
+    function nextQuestion() {
+      current++;
+
+      if (current >= quizData.length) {
+        finishQuiz();
+      } else {
+        renderQuestion();
+      }
+    }
+
+    function finishQuiz() {
+      document.getElementById("quizCard").style.display = "none";
+      document.getElementById("progressBar").style.width = "100%";
+      document.getElementById("stepTitle").innerText = "Quiz concluído";
+
+      const percent = Math.round((score / quizData.length) * 100);
+      document.getElementById("scoreBox").style.display = "block";
+      document.getElementById("scoreText").innerText =
+        "Você acertou " + score + " de " + quizData.length + " questões. Aproveitamento: " + percent + "%.";
+    }
+
+    renderQuestion();
   </script>
 </body>
 </html>

@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
@@ -22,10 +22,11 @@
     <a href="quiz.html">Quiz</a>
     <a href="pdf.html">PDF</a>
     <a href="social-pack.html">Social Pack</a>
+    <a href="podcast.html">Podcast</a>
   </nav>
 
   <main class="copy-page">
-    <section class="copy-hero">
+<section class="copy-hero">
   <h1>PDF Premium da Aula 01</h1>
   <p>Material oficial para estudar, revisar e compartilhar a aula sobre Engenharia Reversa de Conhecimento.</p>
 </section>
@@ -34,7 +35,7 @@
   <section class="copy-card">
     <span class="copy-label">Download</span>
     <h2>Baixar PDF</h2>
-    <p>Use este botão para baixar o material em PDF da Aula 01.</p>
+    <p>Baixe o material em PDF gerado sem cabeçalho e rodapé automático do navegador.</p>
     <div class="copy-actions">
       <a class="copy-btn" href="../../downloads/aula-01.pdf">Baixar PDF</a>
       <a class="copy-btn secondary" href="index.html">Ler aula completa</a>
@@ -56,6 +57,7 @@
   <script>
     function copyText(id) {
       const field = document.getElementById(id);
+      field.focus();
       field.select();
       field.setSelectionRange(0, 999999);
       navigator.clipboard.writeText(field.value);
@@ -68,7 +70,7 @@
       setTimeout(() => {
         button.innerText = original;
         button.classList.remove("success");
-      }, 1400);
+      }, 1300);
     }
   </script>
 </body>
