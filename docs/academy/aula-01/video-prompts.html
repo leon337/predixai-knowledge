@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Prompts de Vídeo da Aula 01 - PredixAI Academy</title>
+  <link rel="stylesheet" href="../../styles.css" />
+  <link rel="stylesheet" href="../../copy-tools.css" />
+</head>
+
+<body>
+  <header>
+    <div class="badge">Vídeo Vertical</div>
+    <h1>Prompts de Vídeo da Aula 01</h1>
+    <p>Prompts para vídeos curtos no formato vertical.</p>
+  </header>
+
+  <nav>
+    <a href="../../index.html">Home</a>
+    <a href="../../academy.html">Academy</a>
+    <a href="index.html">Aula</a>
+    <a href="quiz.html">Quiz</a>
+    <a href="pdf.html">PDF</a>
+    <a href="social-pack.html">Social Pack</a>
+  </nav>
+
+  <main class="copy-page">
+    <section class="copy-hero">
+  <h1>Prompts de Vídeo da Aula 01</h1>
+  <p>Prompts verticais em português BR para YouTube Creator, Shorts, Reels e TikTok.</p>
+</section>
+
+<section class="copy-grid">
+<section class="copy-card">
+  <span class="copy-label">Vídeo 01</span>
+  <h2>Gancho: copiar não é aprender</h2>
+  <p>Prompt vertical 9:16.</p>
+  <textarea class="copy-box" id="video-01" readonly>Crie um v&#237;deo vertical 9:16 em portugu&#234;s do Brasil. Mostre uma pessoa copiando algo da internet sem entender, com express&#227;o confusa. Texto na tela: &#39;Copiar n&#227;o &#233; aprender&#39;. Em seguida, mostre a pessoa analisando a estrutura, separando problema, l&#243;gica e solu&#231;&#227;o em um quadro. Texto na tela: &#39;Aprender &#233; entender a l&#243;gica&#39;. Estilo moderno, educativo, com ritmo r&#225;pido, ilumina&#231;&#227;o cinematogr&#225;fica e sensa&#231;&#227;o de descoberta. Final: &#39;Engenharia Reversa de Conhecimento&#39;. Dura&#231;&#227;o: 20 segundos.</textarea>
+  <div class="copy-actions">
+    <button class="copy-btn" data-copy="video-01" onclick="copyText('video-01')">Copiar</button>
+  </div>
+</section>
+
+<section class="copy-card">
+  <span class="copy-label">Vídeo 02</span>
+  <h2>Gancho: você consome ou transforma?</h2>
+  <p>Prompt vertical 9:16.</p>
+  <textarea class="copy-box" id="video-02" readonly>Crie um v&#237;deo vertical 9:16, educativo e impactante. Comece com a frase na tela: &#39;Voc&#234; consome conte&#250;do ou transforma conte&#250;do em conhecimento?&#39;. Mostre uma pilha de v&#237;deos, posts e c&#243;digos passando r&#225;pido na tela. Depois mostre esse conte&#250;do sendo organizado em um sistema visual com blocos: problema, l&#243;gica, estrutura, aplica&#231;&#227;o. Narra&#231;&#227;o em portugu&#234;s BR explicando que a PredixAI transforma estudo em m&#233;todo reutiliz&#225;vel. Final com CTA: &#39;Acesse a Aula 01 da Academia PredixAI&#39;.</textarea>
+  <div class="copy-actions">
+    <button class="copy-btn" data-copy="video-02" onclick="copyText('video-02')">Copiar</button>
+  </div>
+</section>
+</section>
+  </main>
+
+  <footer>
+    PredixAI BR - Aprenda a pensar. Construa o futuro.
+  </footer>
+
+  <script>
+    function copyText(id) {
+      const field = document.getElementById(id);
+      field.select();
+      field.setSelectionRange(0, 999999);
+      navigator.clipboard.writeText(field.value);
+
+      const button = document.querySelector("[data-copy='" + id + "']");
+      const original = button.innerText;
+      button.innerText = "Copiado!";
+      button.classList.add("success");
+
+      setTimeout(() => {
+        button.innerText = original;
+        button.classList.remove("success");
+      }, 1400);
+    }
+  </script>
+</body>
+</html>

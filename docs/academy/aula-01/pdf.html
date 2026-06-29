@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PDF da Aula 01 - PredixAI Academy</title>
+  <link rel="stylesheet" href="../../styles.css" />
+  <link rel="stylesheet" href="../../copy-tools.css" />
+</head>
+
+<body>
+  <header>
+    <div class="badge">PDF Premium</div>
+    <h1>PDF da Aula 01</h1>
+    <p>Material de estudo da Academia PredixAI.</p>
+  </header>
+
+  <nav>
+    <a href="../../index.html">Home</a>
+    <a href="../../academy.html">Academy</a>
+    <a href="index.html">Aula</a>
+    <a href="quiz.html">Quiz</a>
+    <a href="pdf.html">PDF</a>
+    <a href="social-pack.html">Social Pack</a>
+  </nav>
+
+  <main class="copy-page">
+    <section class="copy-hero">
+  <h1>PDF Premium da Aula 01</h1>
+  <p>Material oficial para estudar, revisar e compartilhar a aula sobre Engenharia Reversa de Conhecimento.</p>
+</section>
+
+<section class="copy-grid two">
+  <section class="copy-card">
+    <span class="copy-label">Download</span>
+    <h2>Baixar PDF</h2>
+    <p>Use este botão para baixar o material em PDF da Aula 01.</p>
+    <div class="copy-actions">
+      <a class="copy-btn" href="../../downloads/aula-01.pdf">Baixar PDF</a>
+      <a class="copy-btn secondary" href="index.html">Ler aula completa</a>
+    </div>
+  </section>
+
+  <section class="copy-card">
+    <span class="copy-label">Benefício</span>
+    <h2>O que este PDF entrega</h2>
+    <p>Você aprende a diferença entre copiar e estudar a lógica por trás de algo pronto, transformando isso em conhecimento reutilizável.</p>
+  </section>
+</section>
+  </main>
+
+  <footer>
+    PredixAI BR - Aprenda a pensar. Construa o futuro.
+  </footer>
+
+  <script>
+    function copyText(id) {
+      const field = document.getElementById(id);
+      field.select();
+      field.setSelectionRange(0, 999999);
+      navigator.clipboard.writeText(field.value);
+
+      const button = document.querySelector("[data-copy='" + id + "']");
+      const original = button.innerText;
+      button.innerText = "Copiado!";
+      button.classList.add("success");
+
+      setTimeout(() => {
+        button.innerText = original;
+        button.classList.remove("success");
+      }, 1400);
+    }
+  </script>
+</body>
+</html>

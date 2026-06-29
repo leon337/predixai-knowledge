@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Carrossel da Aula 01 - PredixAI Academy</title>
+  <link rel="stylesheet" href="../../styles.css" />
+  <link rel="stylesheet" href="../../copy-tools.css" />
+</head>
+
+<body>
+  <header>
+    <div class="badge">Carrossel</div>
+    <h1>Carrossel da Aula 01</h1>
+    <p>Roteiro e prompts para carrossel.</p>
+  </header>
+
+  <nav>
+    <a href="../../index.html">Home</a>
+    <a href="../../academy.html">Academy</a>
+    <a href="index.html">Aula</a>
+    <a href="quiz.html">Quiz</a>
+    <a href="pdf.html">PDF</a>
+    <a href="social-pack.html">Social Pack</a>
+  </nav>
+
+  <main class="copy-page">
+    <section class="copy-hero">
+  <h1>Carrossel da Aula 01</h1>
+  <p>Roteiro e prompts para criar carrossel educativo em redes sociais.</p>
+</section>
+
+<section class="copy-grid">
+<section class="copy-card">
+  <span class="copy-label">Carrossel</span>
+  <h2>Título + hashtags até 100 caracteres</h2>
+  <p>Use como título do post.</p>
+  <textarea class="copy-box" id="car-title" readonly>Copiar n&#227;o &#233; aprender. Entender &#233; construir. #IA #Aprendizado #PredixAI</textarea>
+  <div class="copy-actions">
+    <button class="copy-btn" data-copy="car-title" onclick="copyText('car-title')">Copiar</button>
+  </div>
+</section>
+
+<section class="copy-card">
+  <span class="copy-label">Carrossel</span>
+  <h2>Texto dos slides</h2>
+  <p>Use como roteiro do carrossel.</p>
+  <textarea class="copy-box" id="car-slides" readonly>Slide 1: Copiar n&#227;o &#233; aprender.
+Slide 2: Copiar te d&#225; resposta r&#225;pida, mas n&#227;o cria entendimento.
+Slide 3: Engenharia reversa come&#231;a com uma pergunta: qual problema isso resolve?
+Slide 4: Depois voc&#234; observa a estrutura.
+Slide 5: Em seguida, identifica as decis&#245;es importantes.
+Slide 6: Por fim, transforma isso em m&#233;todo reutiliz&#225;vel.
+Slide 7: PredixAI: conhecimento que vira produto.</textarea>
+  <div class="copy-actions">
+    <button class="copy-btn" data-copy="car-slides" onclick="copyText('car-slides')">Copiar</button>
+  </div>
+</section>
+
+<section class="copy-card">
+  <span class="copy-label">Carrossel</span>
+  <h2>Prompt visual</h2>
+  <p>Prompt para gerar carrossel em IA visual.</p>
+  <textarea class="copy-box" id="car-prompt" readonly>Crie um carrossel vertical 9:16 com 7 slides, estilo tecnol&#243;gico, educativo e premium. Use fundo escuro, detalhes em azul e verde, elementos de intelig&#234;ncia artificial, diagramas simples e tipografia forte. Tema: &#39;Copiar n&#227;o &#233; aprender. Entender &#233; construir.&#39; Cada slide deve ter pouco texto, alto contraste e visual limpo para redes sociais.</textarea>
+  <div class="copy-actions">
+    <button class="copy-btn" data-copy="car-prompt" onclick="copyText('car-prompt')">Copiar</button>
+  </div>
+</section>
+</section>
+  </main>
+
+  <footer>
+    PredixAI BR - Aprenda a pensar. Construa o futuro.
+  </footer>
+
+  <script>
+    function copyText(id) {
+      const field = document.getElementById(id);
+      field.select();
+      field.setSelectionRange(0, 999999);
+      navigator.clipboard.writeText(field.value);
+
+      const button = document.querySelector("[data-copy='" + id + "']");
+      const original = button.innerText;
+      button.innerText = "Copiado!";
+      button.classList.add("success");
+
+      setTimeout(() => {
+        button.innerText = original;
+        button.classList.remove("success");
+      }, 1400);
+    }
+  </script>
+</body>
+</html>

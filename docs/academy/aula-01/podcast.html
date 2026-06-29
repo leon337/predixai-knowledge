@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Podcast da Aula 01 - PredixAI Academy</title>
+  <link rel="stylesheet" href="../../styles.css" />
+  <link rel="stylesheet" href="../../copy-tools.css" />
+</head>
+
+<body>
+  <header>
+    <div class="badge">Podcast</div>
+    <h1>Podcast da Aula 01</h1>
+    <p>Prompt operacional para gerar podcast no Gemini.</p>
+  </header>
+
+  <nav>
+    <a href="../../index.html">Home</a>
+    <a href="../../academy.html">Academy</a>
+    <a href="index.html">Aula</a>
+    <a href="quiz.html">Quiz</a>
+    <a href="pdf.html">PDF</a>
+    <a href="social-pack.html">Social Pack</a>
+  </nav>
+
+  <main class="copy-page">
+    <section class="copy-hero">
+  <h1>Podcast Gemini da Aula 01</h1>
+  <p>Roteiro e prompt prontos para transformar a aula em episódio de áudio.</p>
+</section>
+
+<section class="copy-grid">
+<section class="copy-card">
+  <span class="copy-label">Podcast</span>
+  <h2>Título do episódio</h2>
+  <p>Use como título do podcast.</p>
+  <textarea class="copy-box" id="pod-title" readonly>Copiar vs Engenharia Reversa de Conhecimento</textarea>
+  <div class="copy-actions">
+    <button class="copy-btn" data-copy="pod-title" onclick="copyText('pod-title')">Copiar</button>
+  </div>
+</section>
+
+<section class="copy-card">
+  <span class="copy-label">Podcast</span>
+  <h2>Descrição do episódio</h2>
+  <p>Use como descrição.</p>
+  <textarea class="copy-box" id="pod-desc" readonly>Neste epis&#243;dio, explicamos por que engenharia reversa de conhecimento n&#227;o &#233; copiar. &#201; estudar algo pronto, entender sua l&#243;gica e transformar isso em aprendizado reutiliz&#225;vel.</textarea>
+  <div class="copy-actions">
+    <button class="copy-btn" data-copy="pod-desc" onclick="copyText('pod-desc')">Copiar</button>
+  </div>
+</section>
+
+<section class="copy-card">
+  <span class="copy-label">Gemini</span>
+  <h2>Prompt para Gemini</h2>
+  <p>Copie e cole no Gemini para gerar o podcast.</p>
+  <textarea class="copy-box" id="pod-prompt" readonly>Crie um epis&#243;dio de podcast em portugu&#234;s do Brasil sobre o tema: Engenharia Reversa de Conhecimento n&#227;o &#233; copiar. O epis&#243;dio deve ter dois apresentadores com conversa natural, educativa e acess&#237;vel. A abertura deve apresentar a diferen&#231;a entre copiar e estudar a l&#243;gica. O desenvolvimento deve explicar como observar algo pronto, identificar o problema, entender a estrutura, reconhecer decis&#245;es importantes e transformar isso em conhecimento reutiliz&#225;vel. Inclua um exemplo pr&#225;tico usando um reposit&#243;rio no GitHub. Termine com um resumo e uma chamada para acessar a Aula 01 da Academia PredixAI. Dura&#231;&#227;o estimada: 8 a 12 minutos.</textarea>
+  <div class="copy-actions">
+    <button class="copy-btn" data-copy="pod-prompt" onclick="copyText('pod-prompt')">Copiar</button>
+  </div>
+</section>
+</section>
+  </main>
+
+  <footer>
+    PredixAI BR - Aprenda a pensar. Construa o futuro.
+  </footer>
+
+  <script>
+    function copyText(id) {
+      const field = document.getElementById(id);
+      field.select();
+      field.setSelectionRange(0, 999999);
+      navigator.clipboard.writeText(field.value);
+
+      const button = document.querySelector("[data-copy='" + id + "']");
+      const original = button.innerText;
+      button.innerText = "Copiado!";
+      button.classList.add("success");
+
+      setTimeout(() => {
+        button.innerText = original;
+        button.classList.remove("success");
+      }, 1400);
+    }
+  </script>
+</body>
+</html>
