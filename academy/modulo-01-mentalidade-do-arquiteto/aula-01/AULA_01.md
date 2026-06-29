@@ -1,4 +1,4 @@
-# Aula 01 — O que é Engenharia Reversa de Conhecimento
+﻿# Aula 01 — O que é Engenharia Reversa de Conhecimento
 
 ## Identificação
 
@@ -538,3 +538,4 @@ Esta aula pode gerar:
 A próxima aula será:
 
 Aula 02 — Como um arquiteto estuda um repositório.
+
