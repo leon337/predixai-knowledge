@@ -1,0 +1,28 @@
+{
+  "project": "PredixAI BR",
+  "ux_lx_upgrade": true,
+  "generated_at": "2026-07-01T10:18:25",
+  "backup": "docs_backup_ux_lx_20260701_101825",
+  "pages": [
+    "classes.html",
+    "courses.html",
+    "decisions.html",
+    "ecosystem.html",
+    "handoff.html",
+    "history.html",
+    "ideas.html",
+    "index.html",
+    "mindmap.html",
+    "problems.html",
+    "products.html",
+    "progress.html",
+    "repositories.html",
+    "roadmap-global.html"
+  ],
+  "must_not": [
+    "commit automático",
+    "push automático",
+    "migrar Trader",
+    "publicar PTP-103"
+  ]
+}

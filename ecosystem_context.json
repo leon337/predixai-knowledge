@@ -1,0 +1,77 @@
+{
+  "project": "PredixAI BR",
+  "document": "ecosystem_context.json",
+  "version": "0.1.0-eco-base-001",
+  "date": "2026-07-01",
+  "execution_mode": "MODO 1 - CONSTRUCAO ORGANIZACIONAL",
+  "official_site": "https://leon337.github.io/predixai-knowledge/index.html",
+  "mission": "Transformar Inteligencia Artificial em solucoes praticas que resolvem problemas reais para pessoas e empresas.",
+  "ecosystem_rule": "Toda atualizacao relevante no GitHub deve atualizar tambem o predixai-knowledge e, quando aplicavel, o site publico.",
+  "repositories": [
+    {
+      "name": "predixai-platform",
+      "full": "leon337/predixai-platform",
+      "url": "https://github.com/leon337/predixai-platform",
+      "role": "Núcleo técnico reutilizável da PredixAI BR",
+      "status": "ativo; contém PredixAI Trader temporariamente",
+      "default_branch": "main"
+    },
+    {
+      "name": "predixai-knowledge",
+      "full": "leon337/predixai-knowledge",
+      "url": "https://github.com/leon337/predixai-knowledge",
+      "role": "Memória global, site oficial de contexto e documentação viva",
+      "status": "ativo; alvo desta organização",
+      "default_branch": "main"
+    },
+    {
+      "name": "predixai-agents",
+      "full": "leon337/predixai-agents",
+      "url": "https://github.com/leon337/predixai-agents",
+      "role": "Agentes inteligentes executáveis, manifests, templates, runners e benchmarks",
+      "status": "ativo; implementação de agentes deve morar aqui",
+      "default_branch": "main"
+    },
+    {
+      "name": "predixai-academy",
+      "full": "leon337/predixai-academy",
+      "url": "https://github.com/leon337/predixai-academy",
+      "role": "Plataforma oficial de ensino da PredixAI",
+      "status": "ativo; produto educacional final",
+      "default_branch": "main"
+    },
+    {
+      "name": "academia-predixai",
+      "full": "leon337/academia-predixai",
+      "url": "https://github.com/leon337/academia-predixai",
+      "role": "Acervo bruto de estudos e material-fonte",
+      "status": "ativo; não confundir com a plataforma final",
+      "default_branch": "main"
+    }
+  ],
+  "current_product": {
+    "name": "PredixAI Trader",
+    "current_repository": "predixai-platform",
+    "future_repository_recommended": "predixai-trader",
+    "v1_mode": "Observador",
+    "last_approved_ptp": "PTP-102 - Triple Rebound Observer",
+    "pending_ptp": "PTP-103 - Overnight Observer",
+    "pending_error": "TypeError: MarketSessionRecorder.close_session() takes 1 positional argument but 2 positional arguments (and 1 keyword-only argument) were given",
+    "migration_status": "not_started"
+  },
+  "handoff_order": [
+    "ECOSYSTEM_STATE.md",
+    "ecosystem_context.json",
+    "REPOSITORY_MAP.md",
+    "CODEX_HANDOFF.md",
+    "PTP_LEDGER.md",
+    "PROBLEMS_LOG.md"
+  ],
+  "prohibitions": [
+    "do_not_migrate_trader_now",
+    "do_not_publish_ptp_103",
+    "do_not_reset_local_changes",
+    "do_not_commit_without_validation",
+    "do_not_push_without_leo_approval"
+  ]
+}
