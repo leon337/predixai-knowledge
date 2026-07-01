@@ -1,69 +1,23 @@
 {
   "project": "PredixAI BR",
-  "version": "v2.2-memory-os",
-  "generated_at": "2026-07-01T10:59:13",
-  "backup": "docs_backup_v22_memory_os_20260701_105913",
-  "state": {
-    "geral": 62,
-    "fase": "Fase 4 — Fechamento de Lacunas Técnicas",
-    "fase_pct": 18,
-    "bloco": "FrankMD",
-    "bloco_pct": 24,
-    "proxima_missao": "4.2C — Wikilinks, backlinks e grafo de conhecimento",
-    "xp": 6200,
-    "nivel": "Arquiteto Nível 6"
-  },
-  "areas": [
-    {
-      "name": "Knowledge Hub",
-      "pct": 72,
-      "status": "Em evolução",
-      "href": "brain.html",
-      "desc": "Memória central, ideias, pesquisas e decisões."
-    },
-    {
-      "name": "Trader",
-      "pct": 61,
-      "status": "PTP-103 bloqueado",
-      "href": "progress.html",
-      "desc": "V1 Observador, PTP-102 aprovado."
-    },
-    {
-      "name": "Platform",
-      "pct": 58,
-      "status": "Base técnica",
-      "href": "ecosystem.html",
-      "desc": "Core, Vision, OCR, Capture e Auditoria."
-    },
-    {
-      "name": "Agents",
-      "pct": 34,
-      "status": "Planejado",
-      "href": "handoff.html",
-      "desc": "Codex, OpenClaw e agentes especializados."
-    },
-    {
-      "name": "Academy",
-      "pct": 22,
-      "status": "Trilhas iniciais",
-      "href": "courses.html",
-      "desc": "Cursos, aulas, níveis e entregas."
-    },
-    {
-      "name": "Content Factory",
-      "pct": 18,
-      "status": "Ideia futura",
-      "href": "ideas.html",
-      "desc": "Vídeos, podcasts, posts, PDFs e carrosséis."
-    }
-  ],
+  "version": "v2.3-editable-memory",
+  "generated_at": "2026-07-01T11:15:12",
+  "backup": "docs_backup_v23_editable_memory_20260701_111512",
   "features": [
-    "tudo clicável",
-    "porcentagem em áreas",
-    "histórico",
-    "problemas",
-    "ideias locais",
-    "mapa mental vivo",
-    "Memory OS"
-  ]
+    "editar ideias",
+    "excluir ideias",
+    "importar JSON",
+    "exportar JSON",
+    "Git + Site sync policy"
+  ],
+  "state": {
+    "version": "v2.3-editable-memory",
+    "geral": 63,
+    "fase": "Fase 4 — Fechamento de Lacunas Técnicas",
+    "fase_pct": 20,
+    "bloco": "FrankMD",
+    "bloco_pct": 26,
+    "next": "Transformar a memória local editável em base versionável no GitHub",
+    "rule": "Toda etapa publicada no Git também deve atualizar o site."
+  }
 }
