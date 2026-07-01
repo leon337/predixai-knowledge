@@ -1,6 +1,6 @@
 ﻿{
   "project": "PredixAI BR",
-  "version": "v2.10-firestore-data-map",
-  "decision": "Map Firestore data before implementation",
+  "version": "v2.11-firebase-security-rules",
+  "decision": "Define security rules before app prototype",
   "site_policy": "Git + Site always updated together"
 }
