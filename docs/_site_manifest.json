@@ -1,6 +1,6 @@
-﻿{
+{
   "project": "PredixAI BR",
-  "version": "v2.14-app-init-script-draft",
-  "decision": "Document app init script without executing it",
+  "version": "v2.15-ptp103-publication",
+  "decision": "Record PTP-103 Overnight Observer publication and prepare V1 Trader final audit",
   "site_policy": "Git + Site always updated together"
 }

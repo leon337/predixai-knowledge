@@ -7,22 +7,24 @@
 | Produto | PredixAI Trader |
 | Repositório atual | `predixai-platform` |
 | Modo V1 | Observador |
-| Último PTP aprovado | PTP-102 — Triple Rebound Observer |
-| Próximo PTP pendente | PTP-103 — Overnight Observer |
-| Status PTP-103 | Build iniciado e falhou |
-| Publicação PTP-103 | Bloqueada até ECO-BASE-001 terminar |
+| Ultimo PTP aprovado | PTP-103 - Overnight Observer |
+| Proximo passo | Auditoria final da V1 Trader |
+| Status PTP-103 | Publicado no `predixai-platform` |
+| Publicacao PTP-103 | Concluida com commit e push |
 
 ## Regra
 
 Nenhum PTP é considerado aprovado sem validação prática, commit, push e auditoria posterior do GitHub.
 
-## Pendência crítica
+## PTP-103 publicado
 
-```text
-TypeError: MarketSessionRecorder.close_session() takes 1 positional argument but 2 positional arguments (and 1 keyword-only argument) were given
-```
+- Overnight Observer validado em modo V1 Observador.
+- `MarketSessionRecorder.close_session` preservado com assinatura keyword-only.
+- Chamada corrigida: `close_session(session_id=session.id, status="completed")`.
+- PTP-102 - Triple Rebound Observer validado como preservado.
+- Proximo passo recomendado: auditoria final da V1 Trader.
 
-## Arquivos locais pendentes informados
+## Arquivos publicados
 
 - `src/predixai/trader/__init__.py`
 - `src/predixai/trader/overnight_observer.py`

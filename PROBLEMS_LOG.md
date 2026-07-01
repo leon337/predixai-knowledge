@@ -16,7 +16,7 @@ Impacto: risco de acoplamento e crescimento desorganizado.
 
 Status: criar plano de migração, sem mover agora.
 
-## P-003 — PTP-103 falhou no build
+## P-003 - PTP-103 falhou no build
 
 Erro:
 
@@ -24,7 +24,14 @@ Erro:
 TypeError: MarketSessionRecorder.close_session() takes 1 positional argument but 2 positional arguments (and 1 keyword-only argument) were given
 ```
 
-Status: não corrigir antes de concluir ECO-BASE-001.
+Status: resolvido em 2026-07-01.
+
+Resolucao:
+- PTP-103 - Overnight Observer publicado no `predixai-platform`.
+- Chamada corrigida para `close_session(session_id=session.id, status="completed")`.
+- `MarketSessionRecorder.close_session` preservou assinatura keyword-only.
+- PTP-102 validado como preservado.
+- Proximo passo: auditoria final da V1 Trader.
 
 ## P-004 — Site ainda não era portal global completo
 

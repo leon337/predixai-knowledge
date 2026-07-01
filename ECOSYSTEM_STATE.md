@@ -20,10 +20,11 @@ Toda decisão deve responder: **esta decisão fortalece a missão da PredixAI BR
 - Produto em execução: **PredixAI Trader**.
 - Local atual: `predixai-platform`.
 - Estado da V1: **Observador**.
-- Último PTP aprovado: **PTP-102 — Triple Rebound Observer**.
-- Próximo PTP pendente: **PTP-103 — Overnight Observer**.
-- Status do PTP-103: build iniciado, falhou, não publicar agora.
-- Erro pendente: `TypeError: MarketSessionRecorder.close_session() takes 1 positional argument but 2 positional arguments (and 1 keyword-only argument) were given`.
+- Ultimo PTP aprovado: **PTP-103 - Overnight Observer**.
+- Proximo passo: **auditoria final da V1 Trader**.
+- Status do PTP-103: publicado no `predixai-platform`.
+- Correcao validada: `MarketSessionRecorder.close_session` chamado com `session_id=session.id` e `status="completed"`.
+- PTP-102 preservado: smoke test do Triple Rebound Observer aprovado.
 
 ## Repositórios oficiais
 
@@ -42,7 +43,7 @@ Toda atualização relevante em qualquer repositório oficial deve gerar atualiz
 ## Bloqueios ativos
 
 - Não migrar o Trader ainda.
-- Não publicar PTP-103.
-- Não corrigir PTP-103 antes de concluir ECO-BASE-001.
+- PTP-103 ja foi publicado; nao republicar sem nova validacao.
+- Proximo passo do Trader: auditoria final da V1, sem migrar o Trader agora.
 - Não fazer commit sem validação.
 - Não fazer push sem aprovação do Leo.
