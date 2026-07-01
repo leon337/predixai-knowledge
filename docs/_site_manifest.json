@@ -1,34 +1,34 @@
 {
   "project": "PredixAI BR",
-  "version": "v2-premium-ux-lx",
-  "generated_at": "2026-07-01T10:35:11",
-  "backup": "docs_backup_v2_premium_20260701_103511",
-  "pages": [
-    "classes.html",
-    "courses.html",
-    "decisions.html",
-    "ecosystem.html",
-    "handoff.html",
-    "history.html",
-    "ideas.html",
-    "index.html",
-    "mindmap.html",
-    "problems.html",
-    "products.html",
-    "progress.html",
-    "repositories.html",
-    "roadmap-global.html"
-  ],
-  "principles": [
-    "information architecture",
-    "visual hierarchy",
-    "accessibility",
-    "learning experience design",
-    "task-based navigation"
+  "version": "v2.1-gamified-dashboard",
+  "generated_at": "2026-07-01T10:48:17",
+  "backup": "docs_backup_v21_gamified_20260701_104817",
+  "state": {
+    "general_progress": 62,
+    "phase": "Fase 4 — Fechamento de Lacunas Técnicas",
+    "phase_progress": 18,
+    "block": "FrankMD",
+    "block_progress": 24,
+    "next_mission": "4.2C — Wikilinks, backlinks e grafo de conhecimento",
+    "trader_last": "PTP-102 — Triple Rebound Observer",
+    "trader_pending": "PTP-103 — Overnight Observer",
+    "trader_status": "Bloqueado até conclusão da organização global",
+    "xp": 6200,
+    "level": "Arquiteto Nível 6"
+  },
+  "features": [
+    "dashboard gamificado",
+    "progresso geral",
+    "fase atual",
+    "missões",
+    "badges",
+    "trilha de aulas",
+    "status Trader",
+    "busca local"
   ],
   "must_not": [
-    "commit automatico",
-    "push automatico",
+    "commit automático",
+    "push automático",
     "migrar Trader",
     "publicar PTP-103"
   ]
