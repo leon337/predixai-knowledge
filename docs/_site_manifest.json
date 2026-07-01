@@ -1,6 +1,6 @@
 ﻿{
   "project": "PredixAI BR",
-  "version": "v2.12-knowledge-app-repository-plan",
-  "decision": "Plan future predixai-knowledge-app repo before creating it",
+  "version": "v2.13-local-app-setup-plan",
+  "decision": "Plan local app setup commands before execution",
   "site_policy": "Git + Site always updated together"
 }
