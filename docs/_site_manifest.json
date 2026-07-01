@@ -1,13 +1,14 @@
 ﻿{
   "project": "PredixAI BR",
-  "version": "v2.4-database-readiness",
-  "generated_at": "2026-07-01T11:20:55",
+  "version": "v2.5-backend-decision",
+  "decision": "Firebase-first for future predixai-knowledge-app prototype",
+  "site_policy": "Git + Site always updated together",
   "features": [
-    "database.html",
-    "database readiness plan",
-    "data model v1",
-    "git site sync policy",
-    "roadmap database step"
-  ],
-  "decision": "Do not migrate yet. Prepare Firebase/Supabase decision."
+    "migration.html",
+    "backend decision matrix",
+    "ADR-002",
+    "Firebase prototype plan",
+    "Data Model V2",
+    "Git Site Sync Policy"
+  ]
 }

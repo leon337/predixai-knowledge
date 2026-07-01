@@ -1,16 +1,17 @@
 ﻿# GIT_SITE_SYNC_POLICY
 
 ## Regra oficial
-Toda etapa publicada no GitHub deve atualizar tambÃ©m o site em `docs/`.
+Toda etapa publicada no GitHub deve atualizar também o site em `docs/`.
 
-## Checklist obrigatÃ³rio
-- [ ] Markdown atualizado.
-- [ ] PÃ¡gina do site atualizada.
-- [ ] Links validados.
-- [ ] Diff validado.
-- [ ] Commit feito.
-- [ ] Push feito.
-- [ ] Site publicado aberto e auditado.
+## Definição de pronto
+Uma etapa só está pronta quando:
+- Markdown foi atualizado.
+- Página HTML correspondente foi atualizada.
+- Links foram validados.
+- Diff foi validado.
+- Commit foi feito.
+- Push foi feito.
+- Site público foi aberto e auditado.
 
-## DefiniÃ§Ã£o de pronto
-Uma etapa sÃ³ estÃ¡ pronta quando o GitHub e o site pÃºblico contam a mesma histÃ³ria.
+## Motivo
+A PredixAI usa o site como memória operacional, não como enfeite.
