@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><title>App Init Script Draft - PredixAI BR</title><link rel="stylesheet" href="assets/predixai-v214.css"/></head>
+<body>
+<div class="top"><div class="topin"><strong>PredixAI BR</strong><span>V2.14 App Init Script Draft - Git + Site sincronizados</span></div></div>
+<header class="hero"><div class="heroin"><div><span class="pill">App Init Script Draft</span><h1>App Init Script Draft</h1><p>Rascunho seguro do script para criar o futuro predixai-knowledge-app.</p></div><div class="missionbox"><strong>Decisao V2.14</strong><p>Preparar o script de criacao do app, mas nao executar sem aprovacao.</p><span class="badge warn">Draft</span><span class="badge stop">Sem execucao ainda</span></div></div></header>
+<div class='nav'><nav><a href='index.html'>Dashboard</a><a href='app.html'>App</a><a href='repo-plan.html'>Repo Plan</a><a href='local-setup.html'>Local Setup</a><a href='app-init-script.html' aria-current='page'>Init Script</a><a href='security-rules.html'>Security</a><a href='roadmap-global.html'>Roadmap</a></nav></div>
+<main><section class="section grid cols3">
+  <article class="card"><span class="badge warn">Draft</span><h3>Script futuro</h3><p>O script fica documentado, mas nao deve ser executado agora.</p><div class="bar"><span style="width:45%"></span></div></article>
+  <article class="card"><span class="badge ok">Protecao</span><h3>Sem secrets</h3><p>Somente .env.example. Nunca commitar .env real.</p><div class="bar"><span style="width:100%"></span></div></article>
+  <article class="card"><span class="badge stop">Bloqueio</span><h3>Aprovacao do Leo</h3><p>Criar app somente com aprovacao explicita.</p><div class="bar"><span style="width:100%"></span></div></article>
+</section>
+
+<section class="section">
+  <h2>Draft do script futuro</h2>
+  <pre># NAO EXECUTAR AGORA SEM APROVACAO DO LEO
+
+cd C:\Users\Leo\Documents\GitHub
+npm create vite@latest predixai-knowledge-app -- --template react
+cd predixai-knowledge-app
+npm install
+npm install firebase
+New-Item -ItemType File -Force ".env.example"
+New-Item -ItemType Directory -Force "src\features\auth","src\features\memory","src\features\dashboard","src\features\gallery","src\lib\firebase","src\routes","docs"
+code .
+npm run dev</pre>
+</section>
+
+<section class="section">
+  <h2>Arquivos iniciais planejados</h2>
+  <div class="table"><table>
+    <tr><th>Arquivo/Pasta</th><th>Funcao</th><th>Status</th></tr>
+    <tr><td>README.md</td><td>Explica objetivo e comandos</td><td>Planejado</td></tr>
+    <tr><td>.env.example</td><td>Modelo sem secrets reais</td><td>Obrigatorio</td></tr>
+    <tr><td>firebase.json</td><td>Config do Firebase Hosting futuro</td><td>Planejado</td></tr>
+    <tr><td>firestore.rules</td><td>Regras de seguranca draft</td><td>Planejado</td></tr>
+    <tr><td>src/features/memory</td><td>Modulo de memoria</td><td>Planejado</td></tr>
+    <tr><td>src/lib/firebase</td><td>Cliente Firebase</td><td>Planejado</td></tr>
+    <tr><td>docs/ARCHITECTURE.md</td><td>Arquitetura do app</td><td>Planejado</td></tr>
+  </table></div>
+</section>
+
+<section class="section callout">
+  <h2>Regra operacional</h2>
+  <p>V2.14 apenas documenta o script. O app ainda nao sera criado. O proximo passo e validar com Leo se vamos criar o repo real.</p>
+</section></main>
+<footer>PredixAI BR - cada etapa gera Git, site e relatorio.</footer>
+</body></html>

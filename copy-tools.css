@@ -1,0 +1,142 @@
+.copy-page {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.copy-hero {
+  background: linear-gradient(135deg, #0F172A, #1E293B);
+  color: #FFFFFF;
+  border-radius: 24px;
+  padding: 32px;
+  margin-bottom: 28px;
+  box-shadow: 0 12px 32px rgba(15, 23, 42, 0.22);
+}
+
+.copy-hero h1 {
+  margin: 0 0 12px;
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  line-height: 1.05;
+}
+
+.copy-hero p {
+  color: #E2E8F0;
+  font-size: 1.08rem;
+  max-width: 760px;
+}
+
+.copy-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 18px;
+  margin-bottom: 26px;
+}
+
+.copy-card {
+  background: #FFFFFF;
+  border: 1px solid #CBD5E1;
+  border-radius: 20px;
+  padding: 22px;
+  box-shadow: 0 8px 22px rgba(15, 23, 42, 0.08);
+  scroll-margin-top: 20px;
+}
+
+.copy-card h2,
+.copy-card h3 {
+  margin-top: 0;
+  color: #0F172A;
+}
+
+.copy-card p {
+  color: #475569;
+}
+
+.copy-label {
+  display: inline-flex;
+  align-items: center;
+  background: #DBEAFE;
+  color: #1D4ED8;
+  border-radius: 999px;
+  padding: 6px 12px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.copy-box {
+  width: 100%;
+  min-height: 120px;
+  resize: vertical;
+  border: 1px solid #CBD5E1;
+  border-radius: 16px;
+  padding: 16px;
+  background: #F8FAFC;
+  color: #0F172A;
+  font-size: 0.98rem;
+  line-height: 1.55;
+  font-family: Consolas, Monaco, 'Courier New', monospace;
+  margin-top: 10px;
+  box-sizing: border-box;
+}
+
+.copy-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 12px;
+}
+
+.copy-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background: #2563EB;
+  color: #FFFFFF;
+  border-radius: 999px;
+  padding: 11px 16px;
+  font-weight: 800;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.copy-btn.secondary {
+  background: #0F172A;
+}
+
+.copy-btn.success {
+  background: #059669;
+}
+
+.platform-tabs {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin: 18px 0 24px;
+}
+
+.platform-pill {
+  display: inline-flex;
+  align-items: center;
+  background: #FFFFFF;
+  border: 1px solid #CBD5E1;
+  color: #0F172A;
+  border-radius: 999px;
+  padding: 10px 14px;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.platform-pill:hover {
+  background: #EFF6FF;
+  border-color: #2563EB;
+}
+
+@media (min-width: 860px) {
+  .copy-grid.two {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .copy-grid.three {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

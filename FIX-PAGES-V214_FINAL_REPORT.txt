@@ -1,0 +1,43 @@
+FIX-PAGES-V214 - Relatorio final
+
+Repositorio: C:\Users\Leo\Documents\GitHub\predixai-knowledge
+GitHub: https://github.com/leon337/predixai-knowledge
+Site: https://leon337.github.io/predixai-knowledge/
+Data: 2026-07-01
+
+Causa encontrada:
+- O Git continha a versao V2.14 dentro de docs/.
+- O site publico ainda servia uma pagina antiga em / e /index.html.
+- A raiz do repositorio nao tinha index.html publicado com V2.14.
+- A evidencia pratica indica GitHub Pages servindo a raiz do branch, enquanto os commits V2.13/V2.14 estavam publicados apenas em docs/.
+- A correcao adotada foi sincronizar para a raiz os arquivos publicos top-level de docs/, os assets do site e a subpasta publica docs/academy/aula-01/, mantendo docs/ e raiz alinhados para a publicacao.
+
+Arquivos alterados/criados:
+- Arquivos publicos top-level sincronizados de docs/ para a raiz, incluindo index.html, local-setup.html, app-init-script.html e repo-plan.html.
+- Assets publicos sincronizados de docs/assets/ para assets/.
+- Subpasta publica academy/aula-01/ sincronizada a partir de docs/academy/aula-01/.
+- Links herdados quebrados em components.html corrigidos para destinos existentes.
+- FIX-PAGES-V214_FINAL_REPORT.txt
+
+Validacoes:
+- python scripts\validate_site_links.py
+- git diff --check
+- git status -sb
+
+Commit:
+- Mensagem: FIX: publish V2.14 Knowledge Hub pages
+- Hash: informado no resultado final do Codex apos commit/push
+
+URLs para testar:
+- https://leon337.github.io/predixai-knowledge/
+- https://leon337.github.io/predixai-knowledge/index.html
+- https://leon337.github.io/predixai-knowledge/local-setup.html
+- https://leon337.github.io/predixai-knowledge/app-init-script.html
+
+Confirmacoes:
+- Nao mexeu no predixai-platform.
+- Nao mexeu no Trader.
+- Nao criou app novo.
+- Nao migrou nada.
+- Nao apagou conteudo.
+- Git + Site preparados para sincronizar V2.14.

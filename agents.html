@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PredixAI Agents - PredixAI Knowledge Hub</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header>
+    <div class="badge">Framework operacional v1.0</div>
+    <h1>PredixAI Agents</h1>
+    <p>Arquitetura oficial para operar Codex, Investigator, OpenClaw e futuros agentes com papéis, modos, limites e evidências.</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="foundation.html">Fundação</a>
+    <a href="research.html">Research</a>
+    <a href="academy.html">Academy</a>
+    <a href="agents.html">Agents</a>
+    <a href="media.html">Media</a>
+    <a href="roadmap.html">Roadmap</a>
+  </nav>
+
+  <main>
+    <section class="hero">
+      <h2>Objetivo da área</h2>
+      <p>Separar planejamento, execução, validação, investigação e publicação para impedir retrabalho, publicação prematura e decisões sem evidência.</p>
+      <a class="button" href="foundation.html">Ver Fundação</a>
+    </section>
+
+    <h2 class="section-title">Agentes oficiais</h2>
+    <p class="section-subtitle">Cada agente tem uma função clara dentro da operação da PredixAI.</p>
+
+    <section class="grid">
+      <div class="card">
+        <h3>Codex Executor</h3>
+        <p>Implementa escopos autorizados nos Modos 1, 2 e 3, sempre com limite, teste e relatório.</p>
+        <a href="https://github.com/leon337/predixai-knowledge/blob/main/foundation/agents/PREDIXAI_CODEX_PROMPT_MODO_1.md">Prompt Modo 1</a>
+      </div>
+
+      <div class="card">
+        <h3>Agente Investigador</h3>
+        <p>Audita relatórios, separa claims de evidências e procura contraevidência antes de aprovar avanço.</p>
+        <a href="https://github.com/leon337/predixai-knowledge/blob/main/foundation/agents/PREDIXAI_INVESTIGATOR_PROMPT.md">Prompt Investigator</a>
+      </div>
+
+      <div class="card">
+        <h3>OpenClaw Local Executor</h3>
+        <p>Executa comandos no notebook dentro de diretório autorizado, sem acessar segredos nem sair do escopo.</p>
+        <a href="https://github.com/leon337/predixai-knowledge/blob/main/foundation/agents/PREDIXAI_OPENCLAW_LOCAL_EXECUTOR_PROMPT.md">Prompt OpenClaw</a>
+      </div>
+    </section>
+
+    <h2 class="section-title">Modos de execução</h2>
+    <p class="section-subtitle">A PredixAI separa construir, validar e publicar. Misturar modos é o caminho ninja para a bagunça.</p>
+
+    <section class="grid">
+      <div class="card">
+        <h3>Modo 1 — Construção</h3>
+        <p>Implementa apenas o escopo solicitado. Não documenta, não commita e não publica.</p>
+        <a href="https://github.com/leon337/predixai-knowledge/blob/main/foundation/agents/PREDIXAI_CODEX_PROMPT_MODO_1.md">Abrir prompt</a>
+      </div>
+
+      <div class="card">
+        <h3>Modo 2 — Validação</h3>
+        <p>Executa testes relevantes, valida na prática e emite veredito técnico.</p>
+        <a href="https://github.com/leon337/predixai-knowledge/blob/main/foundation/agents/PREDIXAI_CODEX_PROMPT_MODO_2.md">Abrir prompt</a>
+      </div>
+
+      <div class="card">
+        <h3>Modo 3 — Publicação</h3>
+        <p>Atualiza documentos oficiais, faz commit, push e auditoria somente após validação aprovada.</p>
+        <a href="https://github.com/leon337/predixai-knowledge/blob/main/foundation/agents/PREDIXAI_CODEX_PROMPT_MODO_3.md">Abrir prompt</a>
+      </div>
+    </section>
+
+    <section class="panel path">
+      <h2>Regra central</h2>
+      <ul>
+        <li>Construção não publica.</li>
+        <li>Validação não documenta oficialmente.</li>
+        <li>Publicação não implementa escopo novo.</li>
+        <li>Relatório não é prova.</li>
+        <li>Fonte primária vence narrativa.</li>
+        <li>O Arquiteto aprova.</li>
+      </ul>
+    </section>
+
+    <section class="panel">
+      <h2>Documentação fundacional</h2>
+      <p>A arquitetura completa está instalada em <strong>foundation/PREDIXAI_AGENTS_ARCHITECTURE.md</strong>.</p>
+      <a class="button" href="https://github.com/leon337/predixai-knowledge/blob/main/foundation/PREDIXAI_AGENTS_ARCHITECTURE.md">Abrir arquitetura no GitHub</a>
+    </section>
+  </main>
+
+  <footer>
+    PredixAI BR - Aprenda a pensar. Construa o futuro.
+  </footer>
+</body>
+</html>

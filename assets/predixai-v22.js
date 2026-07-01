@@ -1,0 +1,7 @@
+function q(s){return document.querySelector(s)}
+function qa(s){return [...document.querySelectorAll(s)]}
+document.addEventListener("input",e=>{if(!e.target.matches("[data-search]"))return;let qv=e.target.value.toLowerCase().trim();qa("[data-card]").forEach(c=>c.style.display=c.innerText.toLowerCase().includes(qv)?"":"none")})
+function loadIdeas(){let list=JSON.parse(localStorage.getItem("predixai_ideas")||"[]");let box=q("#ideaList");if(!box)return;box.innerHTML=list.length?list.map((i,n)=>`<article class="card"><span class="badge ${i.kind==='Problema'?'stop':i.kind==='Pesquisa'?'purple':'warn'}">${i.kind}</span><h3>${i.title}</h3><p>${i.text}</p><p><small>${i.date}</small></p></article>`).join(""):"<p class='lead'>Nenhuma ideia local ainda.</p>"}
+function saveIdea(){let title=q("#ideaTitle").value.trim(), text=q("#ideaText").value.trim(), kind=q("#ideaKind").value;if(!title||!text){alert("Preencha título e descrição.");return}let list=JSON.parse(localStorage.getItem("predixai_ideas")||"[]");list.unshift({title,text,kind,date:new Date().toLocaleString("pt-BR")});localStorage.setItem("predixai_ideas",JSON.stringify(list));q("#ideaTitle").value="";q("#ideaText").value="";loadIdeas()}
+function exportIdeas(){let data=localStorage.getItem("predixai_ideas")||"[]";let blob=new Blob([data],{type:"application/json"});let a=document.createElement("a");a.href=URL.createObjectURL(blob);a.download="predixai_ideas_export.json";a.click()}
+document.addEventListener("DOMContentLoaded",loadIdeas)
