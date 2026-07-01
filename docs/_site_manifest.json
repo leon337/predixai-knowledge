@@ -1,14 +1,13 @@
 ﻿{
   "project": "PredixAI BR",
-  "version": "v2.5-backend-decision",
-  "decision": "Firebase-first for future predixai-knowledge-app prototype",
+  "version": "v2.6-knowledge-app-blueprint",
+  "decision": "Plan future predixai-knowledge-app as separated repository",
   "site_policy": "Git + Site always updated together",
   "features": [
-    "migration.html",
-    "backend decision matrix",
-    "ADR-002",
-    "Firebase prototype plan",
-    "Data Model V2",
-    "Git Site Sync Policy"
+    "app.html",
+    "knowledge app blueprint",
+    "app screen map",
+    "ADR-003",
+    "roadmap update"
   ]
 }
