@@ -1,23 +1,13 @@
-{
+﻿{
   "project": "PredixAI BR",
-  "version": "v2.3-editable-memory",
-  "generated_at": "2026-07-01T11:15:12",
-  "backup": "docs_backup_v23_editable_memory_20260701_111512",
+  "version": "v2.4-database-readiness",
+  "generated_at": "2026-07-01T11:20:55",
   "features": [
-    "editar ideias",
-    "excluir ideias",
-    "importar JSON",
-    "exportar JSON",
-    "Git + Site sync policy"
+    "database.html",
+    "database readiness plan",
+    "data model v1",
+    "git site sync policy",
+    "roadmap database step"
   ],
-  "state": {
-    "version": "v2.3-editable-memory",
-    "geral": 63,
-    "fase": "Fase 4 — Fechamento de Lacunas Técnicas",
-    "fase_pct": 20,
-    "bloco": "FrankMD",
-    "bloco_pct": 26,
-    "next": "Transformar a memória local editável em base versionável no GitHub",
-    "rule": "Toda etapa publicada no Git também deve atualizar o site."
-  }
+  "decision": "Do not migrate yet. Prepare Firebase/Supabase decision."
 }
