@@ -1,8 +1,8 @@
 {
   "project": "PredixAI BR",
-  "ux_lx_upgrade": true,
-  "generated_at": "2026-07-01T10:18:25",
-  "backup": "docs_backup_ux_lx_20260701_101825",
+  "version": "v2-premium-ux-lx",
+  "generated_at": "2026-07-01T10:35:11",
+  "backup": "docs_backup_v2_premium_20260701_103511",
   "pages": [
     "classes.html",
     "courses.html",
@@ -19,9 +19,16 @@
     "repositories.html",
     "roadmap-global.html"
   ],
+  "principles": [
+    "information architecture",
+    "visual hierarchy",
+    "accessibility",
+    "learning experience design",
+    "task-based navigation"
+  ],
   "must_not": [
-    "commit automático",
-    "push automático",
+    "commit automatico",
+    "push automatico",
     "migrar Trader",
     "publicar PTP-103"
   ]
