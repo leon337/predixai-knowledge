@@ -1,6 +1,6 @@
 ﻿{
   "project": "PredixAI BR",
-  "version": "v2.11-firebase-security-rules",
-  "decision": "Define security rules before app prototype",
+  "version": "v2.12-knowledge-app-repository-plan",
+  "decision": "Plan future predixai-knowledge-app repo before creating it",
   "site_policy": "Git + Site always updated together"
 }
