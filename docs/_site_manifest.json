@@ -1,13 +1,13 @@
 ﻿{
   "project": "PredixAI BR",
-  "version": "v2.6-knowledge-app-blueprint",
-  "decision": "Plan future predixai-knowledge-app as separated repository",
+  "version": "v2.7-app-screen-map",
+  "decision": "Map app screens before implementation",
   "site_policy": "Git + Site always updated together",
   "features": [
-    "app.html",
-    "knowledge app blueprint",
-    "app screen map",
-    "ADR-003",
+    "app-screens.html",
+    "wireframe map",
+    "user flows",
+    "component catalog",
     "roadmap update"
   ]
 }
