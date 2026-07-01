@@ -1,6 +1,6 @@
 ﻿{
   "project": "PredixAI BR",
-  "version": "v2.13-local-app-setup-plan",
-  "decision": "Plan local app setup commands before execution",
+  "version": "v2.14-app-init-script-draft",
+  "decision": "Document app init script without executing it",
   "site_policy": "Git + Site always updated together"
 }
