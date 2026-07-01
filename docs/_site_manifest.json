@@ -1,6 +1,6 @@
 ﻿{
   "project": "PredixAI BR",
-  "version": "v2.9-component-catalog",
-  "decision": "Define reusable app components before implementation",
+  "version": "v2.10-firestore-data-map",
+  "decision": "Map Firestore data before implementation",
   "site_policy": "Git + Site always updated together"
 }
