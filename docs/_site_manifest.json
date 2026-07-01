@@ -1,35 +1,69 @@
 {
   "project": "PredixAI BR",
-  "version": "v2.1-gamified-dashboard",
-  "generated_at": "2026-07-01T10:48:17",
-  "backup": "docs_backup_v21_gamified_20260701_104817",
+  "version": "v2.2-memory-os",
+  "generated_at": "2026-07-01T10:59:13",
+  "backup": "docs_backup_v22_memory_os_20260701_105913",
   "state": {
-    "general_progress": 62,
-    "phase": "Fase 4 — Fechamento de Lacunas Técnicas",
-    "phase_progress": 18,
-    "block": "FrankMD",
-    "block_progress": 24,
-    "next_mission": "4.2C — Wikilinks, backlinks e grafo de conhecimento",
-    "trader_last": "PTP-102 — Triple Rebound Observer",
-    "trader_pending": "PTP-103 — Overnight Observer",
-    "trader_status": "Bloqueado até conclusão da organização global",
+    "geral": 62,
+    "fase": "Fase 4 — Fechamento de Lacunas Técnicas",
+    "fase_pct": 18,
+    "bloco": "FrankMD",
+    "bloco_pct": 24,
+    "proxima_missao": "4.2C — Wikilinks, backlinks e grafo de conhecimento",
     "xp": 6200,
-    "level": "Arquiteto Nível 6"
+    "nivel": "Arquiteto Nível 6"
   },
-  "features": [
-    "dashboard gamificado",
-    "progresso geral",
-    "fase atual",
-    "missões",
-    "badges",
-    "trilha de aulas",
-    "status Trader",
-    "busca local"
+  "areas": [
+    {
+      "name": "Knowledge Hub",
+      "pct": 72,
+      "status": "Em evolução",
+      "href": "brain.html",
+      "desc": "Memória central, ideias, pesquisas e decisões."
+    },
+    {
+      "name": "Trader",
+      "pct": 61,
+      "status": "PTP-103 bloqueado",
+      "href": "progress.html",
+      "desc": "V1 Observador, PTP-102 aprovado."
+    },
+    {
+      "name": "Platform",
+      "pct": 58,
+      "status": "Base técnica",
+      "href": "ecosystem.html",
+      "desc": "Core, Vision, OCR, Capture e Auditoria."
+    },
+    {
+      "name": "Agents",
+      "pct": 34,
+      "status": "Planejado",
+      "href": "handoff.html",
+      "desc": "Codex, OpenClaw e agentes especializados."
+    },
+    {
+      "name": "Academy",
+      "pct": 22,
+      "status": "Trilhas iniciais",
+      "href": "courses.html",
+      "desc": "Cursos, aulas, níveis e entregas."
+    },
+    {
+      "name": "Content Factory",
+      "pct": 18,
+      "status": "Ideia futura",
+      "href": "ideas.html",
+      "desc": "Vídeos, podcasts, posts, PDFs e carrosséis."
+    }
   ],
-  "must_not": [
-    "commit automático",
-    "push automático",
-    "migrar Trader",
-    "publicar PTP-103"
+  "features": [
+    "tudo clicável",
+    "porcentagem em áreas",
+    "histórico",
+    "problemas",
+    "ideias locais",
+    "mapa mental vivo",
+    "Memory OS"
   ]
 }
